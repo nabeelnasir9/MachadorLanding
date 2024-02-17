@@ -1,0 +1,62 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .loadertext {
+    visibility: hidden;
+    animation: slideUpFadeOut 4s ease forwards;
+    margin: 0;
+    font-size: 100px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  @keyframes slideUpFadeOut {
+    0%, 25% {
+      transform: translateY(20px);
+      opacity: 0;
+      visibility: visible;
+    }
+    10%, 15% {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    20%, 100% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+  
+  .loadBarContainer {
+    width: 200px; 
+    height: 10px;
+    background-color: #000000;
+    animation: fadeIn 3s ease forwards;
+    animation-delay: 3s; 
+    opacity: 0;
+  }
+  
+  .loadBar {
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    animation: load 4s ease forwards;
+    animation-delay: 4s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes load {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  

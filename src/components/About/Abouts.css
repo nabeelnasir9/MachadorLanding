@@ -1,0 +1,274 @@
+.atomContainer {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 5vh auto;
+    border-radius: 50%;
+    
+  }
+
+  .about-section{
+    padding-bottom:4rem;
+  }
+
+
+
+.nucleus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 35px;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 45px;
+    color: black;
+  }
+  
+  .orbit {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    border: 1px solid rgb(1, 1, 1);
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .orbit1 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .orbit2 {
+    width: 60%;
+    height: 60%;
+  }
+  
+  .electron {
+      position: absolute;
+      top: 47%;
+      left: 47%;
+      width: 7%;
+      height: 7%;
+      z-index: 1;
+      animation-duration: 35s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      border-radius: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .atomContainer {
+      width: 80vw;
+      height: 80vw;
+    }
+  
+    .nucleus {
+      font-size: 21px;
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .atomContainer {
+      max-width: 90vw;
+      max-height: 90vw;
+    }
+  }
+  
+  .electronType1 {
+      animation-name: spin1_60
+  
+  }
+  
+  .electronType2 {
+    animation-name: spin1_120;
+  }
+  
+  .electronType3 {
+    animation-name: spin1_180;
+  }
+  
+  .electronType4 {
+    animation-name: spin1_240;
+  }
+  
+  .electronType5 {
+    animation-name: spin1_300;
+  }
+  
+  .electronType6 {
+    animation-name: spin1_360;
+  }
+  
+  @keyframes spin1_60 {
+    0% {
+      transform: rotate(60deg) translate(720%) rotate(-60deg);
+    }
+  
+    to {
+      transform: rotate(420deg) translate(720%) rotate(-420deg);
+    }
+  }
+  
+  @keyframes spin1_120 {
+    0% {
+      transform: rotate(120deg) translate(720%) rotate(-120deg);
+    }
+  
+    to {
+      transform: rotate(480deg) translate(720%) rotate(-480deg);
+    }
+  }
+  
+  @keyframes spin1_180 {
+    0% {
+      transform: rotate(180deg) translate(720%) rotate(-180deg);
+    }
+  
+    to {
+      transform: rotate(540deg) translate(720%) rotate(-540deg);
+    }
+  }
+  
+  @keyframes spin1_240 {
+    0% {
+      transform: rotate(240deg) translate(720%) rotate(-240deg);
+    }
+  
+    to {
+      transform: rotate(600deg) translate(720%) rotate(-600deg);
+    }
+  }
+  
+  @keyframes spin1_300 {
+    0% {
+      transform: rotate(300deg) translate(720%) rotate(-300deg);
+    }
+  
+    to {
+      transform: rotate(660deg) translate(720%) rotate(-660deg);
+    }
+  }
+  
+  @keyframes spin1_360 {
+    0% {
+      transform: rotate(360deg) translate(720%) rotate(-360deg);
+    }
+  
+    to {
+      transform: rotate(720deg) translate(720%) rotate(-720deg);
+    }
+  }
+  
+  .electronType7 {
+    animation-name: spin2_60;
+  }
+  
+  .electronType8 {
+    animation-name: spin2_120;
+  }
+  
+  .electronType9 {
+    animation-name: spin2_180;
+  }
+  
+  .electronType10 {
+    animation-name: spin2_240;
+  }
+  
+  .electronType11 {
+    animation-name: spin2_300;
+  }
+  
+  .electronType12 {
+    animation-name: spin2_360;
+  }
+  
+  @keyframes spin2_60 {
+    0% {
+      transform: rotate(-60deg) translate(430%) rotate(60deg);
+    }
+  
+    to {
+      transform: rotate(-420deg) translate(430%) rotate(420deg);
+    }
+  }
+  
+  @keyframes spin2_120 {
+    0% {
+      transform: rotate(-120deg) translate(430%) rotate(120deg);
+    }
+  
+    to {
+      transform: rotate(-480deg) translate(430%) rotate(480deg);
+    }
+  }
+  
+  @keyframes spin2_180 {
+    0% {
+      transform: rotate(-180deg) translate(430%) rotate(180deg);
+    }
+  
+    to {
+      transform: rotate(-540deg) translate(430%) rotate(540deg);
+    }
+  }
+  
+  @keyframes spin2_240 {
+    0% {
+      transform: rotate(-240deg) translate(430%) rotate(240deg);
+    }
+  
+    to {
+      transform: rotate(-600deg) translate(430%) rotate(600deg);
+    }
+  }
+  
+  @keyframes spin2_300 {
+    0% {
+      transform: rotate(-300deg) translate(430%) rotate(300deg);
+    }
+  
+    to {
+      transform: rotate(-660deg) translate(430%) rotate(660deg);
+    }
+  }
+  
+  @keyframes spin2_360 {
+    0% {
+      transform: rotate(-360deg) translate(430%) rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(-720deg) translate(430%) rotate(720deg);
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .atomContainer {
+      width: 80vw;
+      height: 80vw;
+    }
+  
+    .nucleus {
+      font-size: 21px;
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .atomContainer {
+      max-width: 90vw;
+      max-height: 90vw;
+    }
+  }

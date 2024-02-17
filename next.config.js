@@ -1,0 +1,6 @@
+module.exports = {
+    images: {
+      domains: ['aceternity.com', 'res.cloudinary.com', 'anotherdomain.com', 'images.unsplash.com'],
+    },
+  };
+  
