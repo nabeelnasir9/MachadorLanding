@@ -1,0 +1,107 @@
+.leftContainer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #8a51fb95 5px 10px 20px 0;
+  }
+  .rightContainer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #ec5c52a1 -5px 10px 20px 0;
+  }
+  .mainCoparisonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 20px;
+    max-width: 1500px;
+    margin: 0 auto 50px auto;
+    gap: 150px;
+  
+  }
+  .left,
+  .right {
+    width: 40%;
+    position: relative;
+  }
+  .leftContainer ul li,
+  .rightContainer ul li {
+    display: flex;
+    gap: 20px;
+  }
+  .leftContainer ul,
+  .rightContainer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tick {
+    color: var(--secondary-color);
+    background-color: #8a51fb;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cross {
+    color: var(--secondary-color);
+    background-color: #ec5c52;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .machador {
+    position: absolute;
+    top: 10%;
+    right: -70px;
+    border-radius: 0 20px 20px 0;
+  
+    height: 80%;
+    width: 70px;
+    background-color: #8a51fb;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .machador h1 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    transform: rotate(90deg);
+  }
+  .rightSectionLabel {
+    position: absolute;
+    top: 10%;
+    left: -70px;
+    border-radius: 20px 0px 0px 20px;
+  
+    height: 80%;
+    width: 70px;
+    background-color: #ec5c52;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .rightSectionLabel h1{
+      color: var(--secondary-color);
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 20px;
+      transform: rotate(-90deg);
+  }
+  .rightSectionLabel svg {
+    transform: rotate(180deg);
+  }

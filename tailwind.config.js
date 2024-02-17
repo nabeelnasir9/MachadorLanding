@@ -32,7 +32,7 @@ module.exports = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [require("@tailwindcss/aspect-ratio"),addVariablesForColors],
 };
 
 

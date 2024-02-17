@@ -19,7 +19,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #fff;
+  background-color: #000;
   font-family: "Montserrat", sans-serif !important;
 
 }
