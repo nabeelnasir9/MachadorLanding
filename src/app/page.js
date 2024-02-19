@@ -43,8 +43,8 @@ export default function Page() {
         <Dashboard />
         <HowItWorks/>
         <HeroSection />
-        <ContentCards />
         <BentoGridThirdDemo />
+        <ContentCards />
         <ThreeDCardDemo/>
 
 

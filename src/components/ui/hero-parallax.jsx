@@ -90,12 +90,53 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-black">
-        Generative AI Benefits <br /> For Your Business
+        Generative AI Benefits <br />
+        <span
+          className="text-black"
+          style={{
+            background:
+              "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          For Your Business
+        </span>
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-black">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <p className="max-w-4xl text-base md:text-xl mt-8 dark:text-black font-medium">
+        <span
+          className="text-[2rem] font-bold"
+          style={{
+            background:
+              "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            marginLeft: "-20px",
+          }}
+        >
+          "
+        </span>{" "}
+        We pride ourselves on the exceptional service and cutting-edge solutions
+        we've provided to our diverse clientele. Our AI-powered platform has
+        been a game-changer for businesses across industries, consistently
+        driving efficiency and innovation. Our clients frequently share their
+        success stories, highlighting how our SaaS product has not only met but
+        exceeded their expectations. From automating complex processes to
+        delivering deep analytical insights, we've empowered them to make
+        data-driven decisions that significantly impact their bottom line. Their
+        testimonials are a testament to our commitment to delivering excellence
+        and advancing business intelligence through AI.
+        <span
+          className="text-[2rem] font-bold"
+          style={{
+            background:
+              "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          "
+        </span>
       </p>
     </div>
   );
