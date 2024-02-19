@@ -1,5 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef,  useEffect, useState  } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
+import { IoDocumentAttachSharp } from "react-icons/io5";
+import { BsDatabaseFillGear } from "react-icons/bs";
+import { FaExpeditedssl } from "react-icons/fa";
+import { BiSolidConversation } from "react-icons/bi";
 
 const transition = {
   duration: 0,
@@ -12,12 +16,33 @@ export const GoogleGeminiEffect = ({
   description,
   className,
 }) => {
+  const [iconPosition, setIconPosition] = useState({ x: 0, y: 0 });
+  useEffect(() => {
+    const updateIconPosition = () => {
+      
+      const newPosition = { x: window.innerWidth * 0.1, y: window.innerHeight * 0.1 };
+      setIconPosition(newPosition);
+    };
+
+    // Update position on mount and when the window resizes
+    updateIconPosition();
+    window.addEventListener('resize', updateIconPosition);
+
+    // Clean up
+    return () => window.removeEventListener('resize', updateIconPosition);
+  }, []);
+
   return (
-    <div className={`sticky top-80 ${className}`}>
+    <div className={`sticky top-80 relative ${className}`}>
       <p className="text-lg md:text-7xl font-bold pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-black to-black">
-        {title || `HOW IT WORKS!`}
+        {title || `HOW MACHADOR IS SECURE?`}
       </p>
-      <p className="text-xs md:text-xl font-normal text-center text-black mt-4 max-w-lg mx-auto">
+      <p className="text-xs md:text-xl font-semibold text-center text-black mt-4 max-w-xl mx-auto" style={{
+            background:
+              "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}>
         {description || `Unleash Your Onboarding Journey with AI in Hours`}
       </p>
       <div className="w-full h-[890px] -top-70 md:-top-40 flex items-center justify-center bg-red-transparent absolute">
@@ -146,6 +171,7 @@ export const GoogleGeminiEffect = ({
           </filter>
         </defs>
       </svg>
+      <BsDatabaseFillGear className="absolute text-black" style={{ left: `${iconPosition.x}px`, top: `${iconPosition.y}px` }} color="black"/>
     </div>
   );
 };

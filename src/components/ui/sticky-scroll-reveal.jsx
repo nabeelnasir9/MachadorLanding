@@ -1,6 +1,13 @@
 import React, { useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
+import { IoDocumentAttachSharp } from "react-icons/io5";
+import { BsDatabaseFillGear } from "react-icons/bs";
+import { FaExpeditedssl } from "react-icons/fa";
+import { BiSolidConversation } from "react-icons/bi";
+
+
+
 
 export const StickyScroll = ({ content }) => {
   const [activeCard, setActiveCard] = useState(0);
@@ -20,21 +27,23 @@ export const StickyScroll = ({ content }) => {
     });
   });
 
-  const backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
-  ];
+  // const backgroundColors = [
+  //   "linear-gradient(to right, var(--slate-900), var(--slate-700))",
+  //   "linear-gradient(to right, var(--black), var(--gray-900))",
+  //   "linear-gradient(to right, var(--neutral-900), var(--neutral-700))"
+  // ];
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
     "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
   ];
+  const icons = [<IoDocumentAttachSharp color="white" size={150}/>, <BsDatabaseFillGear color="white" size={150}/>, <FaExpeditedssl color="white" size={150}/>, <BiSolidConversation color="white" size={150}/>];
+
   return (
     <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
+    animate={{
+      background: linearGradients[activeCard % linearGradients.length], transition:"ease-in-out duration-1000"
+    }}
       className="h-[40rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
     >
@@ -69,12 +78,17 @@ export const StickyScroll = ({ content }) => {
           <div className="h-40" />
         </div>
       </div>
-      <motion.div
+      {/* <motion.div
         animate={{
           background: linearGradients[activeCard % linearGradients.length],
         }}
         className="hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden"
-      ></motion.div>
+      ></motion.div> */}
+      <motion.div
+        className="hidden lg:flex h-60 w-80 justify-center items-center rounded-md sticky top-10 overflow-hidden"
+      >
+        {icons[activeCard % icons.length]}
+      </motion.div>
     </motion.div>
   );
 };
