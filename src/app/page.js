@@ -18,39 +18,50 @@ import Loader from "@/components/Loader/Loader";
 import Comparison from "@/components/Comparison/Comparison";
 import { BackgroundBeamsDemo } from "@/components/WishList/WishLst";
 import { BentoGridThirdDemo } from "@/components/CardContainer/CardContainer";
-// import Footer from '@/components/Footer/Footer';
+import Footer from "@/components/Footer/Footer";
+import { StickyScrollRevealDemo } from "@/components/Scroll/Scroll";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import { ThreeDCardDemo } from "@/components/3dcard/3dcard";
+// import Hero from "@/components/Hero/Hero";
 
 export default function Page() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const loaderTimeout = setTimeout(() => setLoading(false), 10000); 
-    return () => clearTimeout(loaderTimeout);
-  }, []);
+  // useEffect(() => {
+  //   const loaderTimeout = setTimeout(() => setLoading(false), 10000);
+  //   return () => clearTimeout(loaderTimeout);
+  // }, []);
   return (
     <React.Fragment>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
-        <>
-          <Header />
-          <Wavy />
-          <Dashboard />
-          <HeroSection />
-          <GoogleGeminiEffectDemo />
-          <Comparison />
-          <About />
-          <SVGMaskEffectDemo />
-          <AlanAi />
-          <ContentCards />
-          <EventVault />
-          <AnimatedTooltipPreview />
-          <Pricing />
-          <BackgroundBeamsDemo/>
-          <InfiniteMovingCardsDemo />
-          <BentoGridThirdDemo/>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Header />
+        <Wavy />
+        {/* <Hero /> */}
+        <Dashboard />
+        <HowItWorks/>
+        <HeroSection />
+        <ContentCards />
+        <BentoGridThirdDemo />
+        <ThreeDCardDemo/>
+
+
+        <GoogleGeminiEffectDemo />
+        <Comparison />
+        <StickyScrollRevealDemo/>
+        <About />
+        <SVGMaskEffectDemo />
+        <AlanAi />
+        <EventVault />
+        <AnimatedTooltipPreview />
+        <Pricing />
+        <BackgroundBeamsDemo />
+        <InfiniteMovingCardsDemo />
+        <Footer />
+      </>
+      {/* )} */}
     </React.Fragment>
   );
 }

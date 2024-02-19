@@ -33,7 +33,7 @@ export const ContainerScroll = ({ users, titleComponent }) => {
       ref={containerRef}
     >
       <div
-        className="py-40 w-full relative"
+        className="py-8 w-full relative"
         style={{
           perspective: "1000px",
         }}
@@ -70,7 +70,7 @@ export const Card = ({ rotate, scale, translate, users }) => {
         rotateX: rotate, // rotate in X-axis
         scale,
         boxShadow:
-          "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
+          "rgba(16, 163, 209, 0.2) 1px -12px 6px 6px, rgba(0, 213, 187, 0.2) 22px 2px 4px -1px",
       }}
       className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-6 bg-[#222222] rounded-[30px] shadow-2xl"
     >
@@ -82,7 +82,7 @@ export const Card = ({ rotate, scale, translate, users }) => {
             style={{ translateY: translate }}
             whileHover={{
               boxShadow:
-                "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+                "rgba(16, 163, 209, 0.2) 1px -12px 6px 6px, rgba(0, 213, 187, 0.2) 22px 2px 4px -1px",
             }}
           >
             <div className="absolute top-2 right-2 rounded-full text-xs font-bold bg-white px-2 py-1">

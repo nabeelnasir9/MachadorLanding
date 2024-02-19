@@ -16,7 +16,7 @@ const MenuItem = ({ setActive, active, item, children }) => (
   <div onMouseEnter={() => setActive(item)} className="relative">
     <motion.p
       transition={{ duration: 0.3 }}
-      className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+      className="cursor-pointer text-black hover:opacity-[0.9] dark:text-black font-semibold"
     >
       {item}
     </motion.p>
@@ -31,7 +31,7 @@ const MenuItem = ({ setActive, active, item, children }) => (
             <motion.div
               transition={transition}
               layoutId="active"
-              className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+              className="bg-gradient-to-r from-blue-400 to-teal-500 dark:bg-gradient-to-r from-blue-600 to-teal-400 backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
             >
               <motion.div layout className="w-max h-full p-4">
                 {children}
@@ -47,7 +47,7 @@ const MenuItem = ({ setActive, active, item, children }) => (
 const Menu = ({ setActive, children }) => (
   <nav
     onMouseLeave={() => setActive(null)}
-    className="relative rounded-full boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6"
+    className="relative boder border-transparent dark:border-white/[0.2] shadow-input flex justify-around items-center space-x-4 px-8 py-3 bg-transparent shadow-md"
   >
     {children}
   </nav>
@@ -63,7 +63,7 @@ const ProductItem = ({ title, description, href, src }) => (
       className="flex-shrink-0 rounded-md shadow-2xl"
     />
     <div>
-      <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
+      <h4 className="text-xl font-bold mb-1 text-white dark:text-white">
         {title}
       </h4>
       <p className="text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300">
@@ -82,5 +82,4 @@ const HoveredLink = ({ children, ...rest }) => (
   </Link>
 );
 
-// Export components if needed
 export { MenuItem, Menu, ProductItem, HoveredLink };
