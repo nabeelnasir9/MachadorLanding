@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Comparison.css";
-// import Aos from "aos";
-// import 'aos/dist/aos.css';
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Comparison() {
+  useEffect(() => {
+    Aos.init({
+      duration: 100,
+    });
+  }, []);
   return (
     <div className="mainCoparisonContainer">
       <div className="left">
@@ -27,7 +31,7 @@ export default function Comparison() {
                     </svg>{" "}
                   </span>
                 </div>
-                <p style={{color:'black', fontWeight:'600'}}>
+                <p style={{ color: "black", fontWeight: "600" }}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
                   fuga placeat
                 </p>
@@ -50,6 +54,7 @@ export default function Comparison() {
           </svg>
         </div>
       </div>
+      <span className="text-black font-bold text-2xl">VS</span>
       <div className="right">
         <div className="rightContainer">
           <ul>
@@ -70,7 +75,7 @@ export default function Comparison() {
                     </svg>
                   </span>
                 </div>
-                <p style={{color:'black', fontWeight:'600'}}>
+                <p style={{ color: "black", fontWeight: "600" }}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
                   fuga placeat
                 </p>

@@ -75,9 +75,9 @@ function Navbar({ className }) {
             </div>
           </MenuItem>
         </div>
-        <div>
-          <button className={styles.getStartedButton}>Get Started</button>
-          
+        <div className="flex gap-3">
+          <button className={styles.getStartedButton}>Get In Touch</button>
+          <button className={styles.NavbarLogin}>Login</button>
         </div>
       </Menu>
     </div>

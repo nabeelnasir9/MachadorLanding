@@ -16,10 +16,10 @@ import { AnimatedTooltip } from "../ui/animated-tooltip";
 export function BentoGridThirdDemo() {
   return (
     <>
-      <h1 className="text-3xl font-semibold text-black dark:text-black mb-4 text-center">
-        How Machador is <br />
+      <h1 className="text-l font-semibold text-black dark:text-black mb-4 mt-10 text-center pt-40">
+        SAVE TIME AND MONEY <br />
         <span
-          className="text-4xl md:text-[5rem] font-bold mt-1 mb-2 leading-none"
+          className="text-3xl md:text-3rem] font-bold mt-1 mb-2 leading-none max-w-96 m-0 m-auto"
           style={{
             background:
               "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
@@ -27,10 +27,17 @@ export function BentoGridThirdDemo() {
             WebkitTextFillColor: "transparent",
           }}
         >
-          Helping Your Business
+          Streamline your onboarding process by resolving up to 80% of inquiries
+          with AI.
         </span>
       </h1>
-      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+      <h1 className="text-l font-semibold text-black dark:text-black mb-4 text-center pb-10">
+        <span className="text-2xl md:text-3rem] font-bold mt-1 mb-2 leading-none max-w-96 m-0 m-auto">
+          Experience effortless onboarding and provide round-the-clock
+          assistance to your clients, all without the need for coding.
+        </span>
+      </h1>
+      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[20rem]">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
@@ -46,7 +53,7 @@ export function BentoGridThirdDemo() {
   );
 }
 const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100"></div>
 );
 
 const SkeletonOne = () => {
@@ -83,21 +90,21 @@ const SkeletonOne = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white "
       >
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
       </motion.div>
       <motion.div
         variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white "
       >
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
       </motion.div>
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white "
       >
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
@@ -138,7 +145,7 @@ const SkeletonTwo = () => {
           style={{
             maxWidth: Math.random() * (100 - 40) + 40 + "%",
           }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100  w-full h-4"
         ></motion.div>
       ))}
     </motion.div>
@@ -246,7 +253,7 @@ const SkeletonFour = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
     >
-      <div className="flex flex-row items-center justify-center mb-10 w-full">
+      <div className="flex flex-row items-center justify-center mb-0 w-full">
         <AnimatedTooltip items={people} />
       </div>
       {/* <motion.div
@@ -337,7 +344,7 @@ const SkeletonFive = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white "
       >
         <Image
           src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
@@ -353,7 +360,7 @@ const SkeletonFive = () => {
       </motion.div>
       <motion.div
         variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white"
       >
         <p className="text-xs text-neutral-500">Use PHP.</p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
@@ -371,7 +378,7 @@ const items = [
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <IconClipboardCopy className="h-5 w-5 text-white" />,
   },
   {
     title: "Automated Proofreading",
@@ -382,7 +389,7 @@ const items = [
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
   },
   {
     title: "Contextual Suggestions",
@@ -393,18 +400,18 @@ const items = [
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <IconSignature className="h-5 w-5 text-white" />,
   },
   {
-    title: "Sentiment Analysis",
+    title: "Your Partner for you 24/7",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Have your partner 24/7 to help your business
       </span>
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconTableColumn className="h-5 w-5 text-white" />,
   },
 
   {
@@ -416,6 +423,6 @@ const items = [
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    icon: <IconBoxAlignRightFilled className="h-5 w-5 text-white" />,
   },
 ];

@@ -2,6 +2,7 @@ import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import '../Styles/HeroParallex.css';
 
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
@@ -138,6 +139,8 @@ export const Header = () => {
           "
         </span>
       </p>
+      <button className="HeroParallebutton"> Get In Touch
+</button>
     </div>
   );
 };

@@ -45,13 +45,14 @@ export default function Page() {
         <HeroSection />
         <BentoGridThirdDemo />
         <ContentCards />
+        <Comparison />
+        <About />
+
         <ThreeDCardDemo/>
 
 
         <GoogleGeminiEffectDemo />
-        <Comparison />
         <StickyScrollRevealDemo/>
-        <About />
         <SVGMaskEffectDemo />
         <AlanAi />
         <EventVault />

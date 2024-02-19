@@ -4,11 +4,13 @@ export function ContentCards() {
   return (
     <div className="max-w-5xl mx-auto px-8">
       <h1
-              className="text-3xl font-semibold text-black dark:text-black mb-4 text-center"
+              className="text-3xl font-semibold text-black dark:text-black mb-4 text-center mt-10 pt-20"
               
             >
               How Machador is <br />
-              <span className="text-4xl md:text-[5rem] font-bold mt-1 mb-2 leading-none" style={{
+              
+            </h1>
+            <span className="text-4xl md:text-[5rem] font-bold mt-1 mb-2 leading-none" style={{
                 background:
                   "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
                 WebkitBackgroundClip: "text",
@@ -16,7 +18,6 @@ export function ContentCards() {
               }}>
                 Helping Your Business
               </span>
-            </h1>
       <HoverEffect items={projects} />
     </div>
   );
