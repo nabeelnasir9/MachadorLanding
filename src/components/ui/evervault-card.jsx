@@ -3,24 +3,23 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/utils/cn";
 
 export const EvervaultCard = ({ text, className }) => {
-  let mouseX = useMotionValue(0);
-  let mouseY = useMotionValue(0);
+  let mouseX = useMotionValue(50); // Initialize to a default position
+  let mouseY = useMotionValue(50); // Initialize to a default position
 
   const [randomString, setRandomString] = useState("");
 
   useEffect(() => {
-    let str = generateRandomString(1500);
-    setRandomString(str);
+    // Generate initial random string
+    setRandomString(generateRandomString(1500));
+
+    // Set an interval to update the random string every 500 milliseconds
+    const intervalId = setInterval(() => {
+      setRandomString(generateRandomString(1500));
+    }, 500);
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
-
-  function onMouseMove({ currentTarget, clientX, clientY }) {
-    let { left, top } = currentTarget.getBoundingClientRect();
-    mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
-
-    const str = generateRandomString(1500);
-    setRandomString(str);
-  }
 
   return (
     <div
@@ -29,10 +28,7 @@ export const EvervaultCard = ({ text, className }) => {
         className
       )}
     >
-      <div
-        onMouseMove={onMouseMove}
-        className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
-      >
+      <div className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full">
         <CardPattern
           mouseX={mouseX}
           mouseY={mouseY}
@@ -50,7 +46,7 @@ export const EvervaultCard = ({ text, className }) => {
 };
 
 export function CardPattern({ mouseX, mouseY, randomString }) {
-  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  let maskImage = useMotionTemplate`radial-gradient(1000px at ${mouseX}px ${mouseY}px, white, transparent)`;
   let style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
@@ -72,7 +68,8 @@ export function CardPattern({ mouseX, mouseY, randomString }) {
   );
 }
 
-const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+const characters =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789eduwioweniofneiownfoienwiofnewfoinoiwfnoifneoiwnipfnpwiefiwinfnfeoqwinfeoinewnio3;UY48392E0PQOW;MSAKJDqwertyuiop;lk,./'][poiuytrewqazxcvbnm,./';lkjhgfdsaqweABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789eduwioweniofneiownfoienwiofnewfoinoiwfnoifneoiwnipfnpwiefiwinfnfeoqwinfeoinewnio3;UY48392E0PQOW;MSAKJDqwertyuiop;lk,./'][poiuytrewqazxcvbnm,.lkjhgfdsaqweABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789eduwioweniofneiownfoienwiofnewfoinoiwfnoifneoiwnipfnpwiefiwinfnfeoqwinfeoinewnio3;UY48392E0PQOW;MSAKJDqwertyuiop;lk,./'][poiuytrewqazxcvbnm,./';lkjhgfdsaqwertyuiop[]]BHFYLEWRH3EIJQWSAKLJDHFYGEUHWODIASNKLXZC KBDHVFILYGeuhwoipjas;kx cjbdilfgeh80wpid";
 export const generateRandomString = (length) => {
   let result = "";
   for (let i = 0; i < length; i++) {
@@ -91,6 +88,7 @@ export const Icon = ({ className, ...rest }) => {
       stroke="currentColor"
       className={className}
       {...rest}
+      width="1000px"
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
     </svg>

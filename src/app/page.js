@@ -22,6 +22,7 @@ import Footer from "@/components/Footer/Footer";
 import { StickyScrollRevealDemo } from "@/components/Scroll/Scroll";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { ThreeDCardDemo } from "@/components/3dcard/3dcard";
+
 // import Hero from "@/components/Hero/Hero";
 
 export default function Page() {
@@ -31,6 +32,7 @@ export default function Page() {
   //   const loaderTimeout = setTimeout(() => setLoading(false), 10000);
   //   return () => clearTimeout(loaderTimeout);
   // }, []);
+  
   return (
     <React.Fragment>
       {/* {loading ? (
@@ -56,10 +58,10 @@ export default function Page() {
         <SVGMaskEffectDemo />
         <AlanAi />
         <EventVault />
-        <AnimatedTooltipPreview />
+        {/* <AnimatedTooltipPreview /> */}
         <Pricing />
         <BackgroundBeamsDemo />
-        <InfiniteMovingCardsDemo />
+        {/* <InfiniteMovingCardsDemo /> */}
         <Footer />
       </>
       {/* )} */}
