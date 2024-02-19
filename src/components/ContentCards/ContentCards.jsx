@@ -30,46 +30,46 @@ export function ContentCards() {
 
 export const projects = [
   {
-    title: "Stripe",
+    title: "Notion",
     description:
       "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+    link: "",
     icons: <SiNotion size={40} />,
   },
   {
-    title: "Netflix",
+    title: "Slack",
     description:
       "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+    link: "",
     icons: <FaSlack size={40} />,
   },
   {
-    title: "Google",
+    title: "Google Drive",
     description:
       "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    link: "",
     icons: <FaGoogleDrive size={40} />,
   },
   {
-    title: "Meta",
+    title: "Gmail",
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+    link: "",
     icons: <SiGmail size={40} />,
   },
 
   {
-    title: "Amazon",
+    title: "Trello",
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+    link: "",
     icons: <DiTrello size={40} />,
   },
   {
-    title: "Microsoft",
+    title: "Zapier",
     description:
       "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+    link: "",
     icons: <SiZapier size={40} />,
   },
 ];

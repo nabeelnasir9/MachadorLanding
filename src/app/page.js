@@ -55,7 +55,7 @@ export default function Page() {
 
         <GoogleGeminiEffectDemo />
         <StickyScrollRevealDemo/>
-        <SVGMaskEffectDemo />
+        {/* <SVGMaskEffectDemo /> */}
         <AlanAi />
         <EventVault />
         {/* <AnimatedTooltipPreview /> */}
