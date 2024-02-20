@@ -34,8 +34,10 @@ export const StickyScroll = ({ content }) => {
   // ];
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
+    "linear-gradient(to bottom right, var(--emerald-500), var(--cyan-500))",
+    "linear-gradient(to top right, var(--cyan-500), var(--emerald-500))",
+    "linear-gradient(to bottom left, var(--cyan-500), var(--emerald-500))",
+
   ];
   const icons = [<IoDocumentAttachSharp color="white" size={150}/>, <BsDatabaseFillGear color="white" size={150}/>, <FaExpeditedssl color="white" size={150}/>, <BiSolidConversation color="white" size={150}/>];
 
@@ -69,7 +71,7 @@ export const StickyScroll = ({ content }) => {
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-kg text-white max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>

@@ -1,0 +1,85 @@
+/* .LeftIconsOfGemini{
+    position: absolute;
+    z-index:10;
+}
+
+.RightIconsOfGemini{
+    position: absolute;
+    z-index:10;
+}
+
+.LeftGeminiIcon1{
+    left:105% !important;
+    top: 10% !important;
+    position: relative;
+}  
+.LeftGeminiIcon2{
+    left:105% !important;
+    top: 276px;
+    position: relative;
+}  
+.LeftGeminiIcon3{
+    left:105% !important;
+    top: 276px;
+    position: relative;
+}  
+.LeftGeminiIcon4{
+    left:105% !important;
+    top: 276px;
+    position: relative;
+}    
+
+@media screen and (max-width:1440px){
+    .LeftGeminiIcon1{
+    left:0% !important;
+}    
+.LeftGeminiIcon2{
+    left:0% !important;
+}    
+.LeftGeminiIcon3{
+    left:0% !important;
+}    
+.LeftGeminiIcon4{
+    left:0% !important;
+}    
+.RightGeminiIcon1{
+    right:0% !important;
+}
+}
+
+/* @media screen and (max-width:1300px){
+    .LeftIconsOfGemini{
+        left:0% !important;
+    }    
+    .RightIconsOfGemini{
+        right:0% !important;
+    }
+    }
+
+    @media screen and (max-width:1280px){
+        .LeftIconsOfGemini{
+            left:0% !important;
+        }    
+        .RightIconsOfGemini{
+            right:0% !important;
+        }
+        }
+
+
+        @media screen and (max-width:1300px){
+            .LeftIconsOfGemini{
+                left:0% !important;
+            }    
+            .RightIconsOfGemini{
+                right:0% !important;
+            }
+            }
+        
+            @media screen and (max-width:1300px){
+                .LeftIconsOfGemini{
+                    left:0% !important;
+                }    
+                .RightIconsOfGemini{
+                    right:0% !important;
+                }
+                } */ 

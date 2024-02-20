@@ -36,16 +36,14 @@ export default function Page() {
   
   return (
     <React.Fragment>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
+      ) : ( */}
       <>
         <Header />
         <Wavy />
         <HomeIcons/>
-        {/* <Hero /> */}
         <Dashboard />
-        <ParallaxScrollDemo/>
         <HowItWorks/>
         <HeroSection />
         <BentoGridThirdDemo />
@@ -56,17 +54,15 @@ export default function Page() {
         <GoogleGeminiEffectDemo />
         <StickyScrollRevealDemo/>
         <CalendlyComponent/>
-        {/* <SVGMaskEffectDemo /> */}
+        <ParallaxScrollDemo/>
         <AlanAi />
         <EventVault />
-        {/* <AnimatedTooltipPreview /> */}
         <Pricing />
         <BackgroundBeamsDemo />
-        {/* <InfiniteMovingCardsDemo /> */}
        
         <Footer />
       </>
-       )}
+      {/* )} */}
     </React.Fragment>
   );
 }

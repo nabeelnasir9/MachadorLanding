@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import styles from "./Header.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -16,8 +18,10 @@ function Navbar({ className }) {
   return (
     <div className={cn("fixed top-10 inset-x-0 mx-auto z-50", className)}>
       <Menu setActive={setActive} className="flex items-center justify-around">
-        <h1 className={styles.LogoHeader}>machador.</h1>
-        
+        <Link href="/">
+        {/* <h1 className={styles.LogoHeader}>machador.</h1> */}
+        <Image src="/5.jpg" width={120} height={120}/>
+        </Link>
         <div className="flex justify-between items-center gap-10">
           <MenuItem setActive={setActive} active={active} item="Enterprise">
             <div className="flex flex-col space-y-4 text-sm">
