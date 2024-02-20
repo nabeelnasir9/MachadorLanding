@@ -24,6 +24,7 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { ThreeDCardDemo } from "@/components/3dcard/3dcard";
 import HomeIcons from '../components/HomeIcons/HomeIcons';
 import CalendlyComponent from "@/components/Calendly/CalendlyComponent";
+import { ParallaxScrollDemo } from "@/components/paralleax/paralleax";
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -35,21 +36,22 @@ export default function Page() {
   
   return (
     <React.Fragment>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
+      ) : ( */}
       <>
         <Header />
         <Wavy />
         <HomeIcons/>
         {/* <Hero /> */}
         <Dashboard />
+        <ParallaxScrollDemo/>
         <HowItWorks/>
         <HeroSection />
         <BentoGridThirdDemo />
         <ContentCards />
         <Comparison />
-        <About />
+        {/* <About /> */}
         <ThreeDCardDemo/>
         <GoogleGeminiEffectDemo />
         <StickyScrollRevealDemo/>
@@ -64,7 +66,7 @@ export default function Page() {
        
         <Footer />
       </>
-      )}
+      {/* )} */}
     </React.Fragment>
   );
 }
