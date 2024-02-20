@@ -44,7 +44,7 @@ export const HeroParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[270vh] py-10 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[240vh] py-10 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -73,7 +73,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        {/* <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -81,7 +81,7 @@ export const HeroParallax = ({ products }) => {
               key={product.title}
             />
           ))}
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </div>
   );
@@ -120,10 +120,7 @@ export const Header = () => {
         We pride ourselves on the exceptional service and cutting-edge solutions
         we've provided to our diverse clientele. Our AI-powered platform has
         been a game-changer for businesses across industries, consistently
-        driving efficiency and innovation. Our clients frequently share their
-        success stories, highlighting how our SaaS product has not only met but
-        exceeded their expectations. From automating complex processes to
-        delivering deep analytical insights, we've empowered them to make
+        driving efficiency and innovation. We've empowered them to make
         data-driven decisions that significantly impact their bottom line. Their
         testimonials are a testament to our commitment to delivering excellence
         and advancing business intelligence through AI.

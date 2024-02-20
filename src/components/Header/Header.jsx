@@ -17,6 +17,7 @@ function Navbar({ className }) {
     <div className={cn("fixed top-10 inset-x-0 mx-auto z-50", className)}>
       <Menu setActive={setActive} className="flex items-center justify-around">
         <h1 className={styles.LogoHeader}>machador.</h1>
+        
         <div className="flex justify-between items-center gap-10">
           <MenuItem setActive={setActive} active={active} item="Enterprise">
             <div className="flex flex-col space-y-4 text-sm">

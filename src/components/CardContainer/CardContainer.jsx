@@ -16,23 +16,26 @@ import { AnimatedTooltip } from "../ui/animated-tooltip";
 export function BentoGridThirdDemo() {
   return (
     <>
-      <h1 className="text-l font-semibold text-black dark:text-black mb-4 mt-10 text-center pt-40">
-        SAVE TIME AND MONEY <br />
-        <span
-          className="text-3xl md:text-3rem] font-bold mt-1 mb-2 leading-none max-w-96 m-0 m-auto"
-          style={{
-            background:
-              "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
-          Streamline your onboarding process by resolving up to 80% of inquiries
-          with AI.
-        </span>
-      </h1>
-      <h1 className="text-l font-semibold text-black dark:text-black mb-4 text-center pb-10">
-        <span className="text-2xl md:text-3rem] font-bold mt-1 mb-2 leading-none max-w-96 m-0 m-auto">
+     <h1 className="text-medium font-semibold text-black dark:text-black mb-4 mt-10 text-center pt-40" style={{ maxWidth: '800px', margin: '0 auto' }}>
+  SAVE TIME AND MONEY <br />
+  <span
+    className="text-4xl md:text-4rem] font-bold mt-1 mb-2 leading-none max-w-96 m-0 m-auto"
+    style={{
+      background:
+        "linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      maxWidth: '700px', // Ensuring the span also respects the max-width
+      display: 'inline-block' // This makes the background clip effect work with max-width
+    }}
+  >
+    Streamline your onboarding process by resolving up to 80% of inquiries
+    with AI.
+  </span>
+</h1>
+
+      <h1 className="text-md font-medium text-black dark:text-black mb-4 text-center pb-10" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <span className="text-lg md:text-3rem] font-medium mt-1 mb-2 leading-none max-w-96 m-0 m-auto">
           Experience effortless onboarding and provide round-the-clock
           assistance to your clients, all without the need for coding.
         </span>

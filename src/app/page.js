@@ -22,25 +22,26 @@ import Footer from "@/components/Footer/Footer";
 import { StickyScrollRevealDemo } from "@/components/Scroll/Scroll";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { ThreeDCardDemo } from "@/components/3dcard/3dcard";
-
-// import Hero from "@/components/Hero/Hero";
+import HomeIcons from '../components/HomeIcons/HomeIcons';
+import CalendlyComponent from "@/components/Calendly/CalendlyComponent";
 
 export default function Page() {
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const loaderTimeout = setTimeout(() => setLoading(false), 10000);
-  //   return () => clearTimeout(loaderTimeout);
-  // }, []);
+  useEffect(() => {
+    const loaderTimeout = setTimeout(() => setLoading(false), 10000);
+    return () => clearTimeout(loaderTimeout);
+  }, []);
   
   return (
     <React.Fragment>
-      {/* {loading ? (
+      {loading ? (
         <Loader />
-      ) : ( */}
+      ) : (
       <>
         <Header />
         <Wavy />
+        <HomeIcons/>
         {/* <Hero /> */}
         <Dashboard />
         <HowItWorks/>
@@ -49,12 +50,10 @@ export default function Page() {
         <ContentCards />
         <Comparison />
         <About />
-
         <ThreeDCardDemo/>
-
-
         <GoogleGeminiEffectDemo />
         <StickyScrollRevealDemo/>
+        <CalendlyComponent/>
         {/* <SVGMaskEffectDemo /> */}
         <AlanAi />
         <EventVault />
@@ -62,9 +61,10 @@ export default function Page() {
         <Pricing />
         <BackgroundBeamsDemo />
         {/* <InfiniteMovingCardsDemo /> */}
+       
         <Footer />
       </>
-      {/* )} */}
+      )}
     </React.Fragment>
   );
 }

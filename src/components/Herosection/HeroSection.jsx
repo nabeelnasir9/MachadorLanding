@@ -7,77 +7,58 @@ export default function HeroSection() {
 export const products = [
   {
     title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    link: "",
     thumbnail: "/11.png",
   },
   {
     title: "Cursor",
-    link: "https://cursor.so",
+    link: "",
     thumbnail: "/22.png",
   },
   {
     title: "Rogue",
-    link: "https://userogue.com",
+    link: "",
     thumbnail: "/33.png",
   },
   {
     title: "Editorially",
-    link: "https://editorially.org",
+    link: "",
     thumbnail: "/44.png",
   },
   {
     title: "Editrix AI",
-    link: "https://editrix.ai",
+    link: "",
     thumbnail: "/55.png",
   },
   {
     title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    link: "",
     thumbnail: "/66.png",
   },
   {
     title: "Algochurn",
-    link: "https://algochurn.com",
+    link: "",
     thumbnail: "/77.png",
   },
   {
     title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    link: "",
     thumbnail: "/88.png",
   },
   {
     title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail: "/99.png",
+    link: "",
+    thumbnail: "/120.png",
   },
   {
     title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    link: "",
     thumbnail: "/100.png",
   },
   {
     title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    link: "",
     thumbnail: "/110.png",
   },
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail: "/120.png",
-  },
-  {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail: "/120.png",
-  },
-  {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail: "/100.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail: "/100.png",
-  },
+ 
 ];

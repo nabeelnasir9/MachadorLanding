@@ -7,30 +7,36 @@ export function ThreeDCardDemo() {
   // Dummy data for five cards
   const cardsData = [
     {
-      title: "Make things float in air",
-      description: "Hover over this card to unleash the power of CSS perspective",
-      imageUrl: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Accelerate User Growth",
+      description: "AI-driven insights and personalization power exponential growth in your user base, ensuring rapid scaling of your SaaS platform.",
+      imageUrl: "/log1.png",
     },
     {
-        title: "Make things float in air",
-        description: "Hover over this card to unleash the power of CSS perspective",
-        imageUrl: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Cut Onboarding Time",
+        description: "Reduce the median time to onboard users drastically, thanks to intuitive AI-guided processes that make initial setup a breeze.",
+        imageUrl: "/log2.png",
       },
       {
-        title: "Make things float in air",
-        description: "Hover over this card to unleash the power of CSS perspective",
-        imageUrl: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Actionable Analytics",
+        description: "Leverage the power of AI to gain real-time insights into user behavior, enhancing decision-making and strategy planning.",
+        imageUrl: "/log6.png",
       },
       {
-        title: "Make things float in air",
-        description: "Hover over this card to unleash the power of CSS perspective",
-        imageUrl: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Boost User Engagement",
+        description: "Enhance user engagement through AI-powered customization and interactive onboarding experiences tailored to each user.",
+        imageUrl: "/log3.png",
       },
       {
-        title: "Make things float in air",
-        description: "Hover over this card to unleash the power of CSS perspective",
-        imageUrl: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Improve Retention Rates",
+        description: "AI Onboarding helps in retaining users by offering continuous learning and adaptation to user needs, significantly improving retention rates",
+        imageUrl: "/log4.png",
       },
+      {
+        title: "Decrease Support Queries",
+        description: "Minimize the need for user support by solving common queries with an AI-driven knowledge base, reducing support tickets drastically",
+        imageUrl: "/log5.png",
+      },
+      
     // Add 4 more card data objects here...
   ];
 
@@ -53,7 +59,7 @@ export function ThreeDCardDemo() {
                   {card.description}
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
-                  <Image src={card.imageUrl} height="300" width="300" layout="responsive" className="object-cover rounded-xl" alt="thumbnail" />
+                  <Image src={card.imageUrl} height="100" width="100" layout="responsive" className="object-cover rounded-xl" alt="thumbnail" />
                 </CardItem>
                 <div className="flex justify-between items-center mt-20">
                   <CardItem translateZ={20} as="button" className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
