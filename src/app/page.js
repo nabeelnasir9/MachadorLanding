@@ -36,9 +36,9 @@ export default function Page() {
   
   return (
     <React.Fragment>
-      {/* {loading ? (
+      {loading ? (
         <Loader />
-      ) : ( */}
+      ) : (
       <>
         <Header />
         <Wavy />
@@ -62,7 +62,7 @@ export default function Page() {
        
         <Footer />
       </>
-      {/* )} */}
+      )}
     </React.Fragment>
   );
 }
