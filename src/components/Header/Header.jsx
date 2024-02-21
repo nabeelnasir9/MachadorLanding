@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+    <div className="relative w-full flex items-center justify-center bg-white">
+      <Navbar className="top-0" />
     </div>
   );
 }
@@ -43,11 +43,13 @@ function Navbar({ className }) {
               <HoveredLink href="/branding">Branding</HoveredLink>
             </div>
           </MenuItem>
+
+          <Link href="/Security">
           <MenuItem setActive={setActive} active={active} item="Security">
             <div className="text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
                 title="Algochurn"
-                href="https://algochurn.com"
+                href="/security"
                 src="https://res.cloudinary.com/algochurn/image/upload/v1700109138/framer%20motion%20components/290shots_so_gruelx.png"
                 description="Prepare for tech interviews like never before."
               />
@@ -71,6 +73,7 @@ function Navbar({ className }) {
               />
             </div>
           </MenuItem>
+          </Link>
           <MenuItem setActive={setActive} active={active} item="Pricing">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/hobby">Hobby</HoveredLink>

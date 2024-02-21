@@ -47,7 +47,7 @@ const MenuItem = ({ setActive, active, item, children }) => (
 const Menu = ({ setActive, children }) => (
   <nav
     onMouseLeave={() => setActive(null)}
-    className="relative boder border-transparent dark:border-white/[0.2] shadow-input flex justify-around items-center space-x-4 px-8 py-3 bg-transparent shadow-md"
+    className="relative boder border-transparent dark:border-white/[0.2] shadow-input flex justify-around items-center space-x-4 px-8 py-3 bg-white shadow-md"
   >
     {children}
   </nav>

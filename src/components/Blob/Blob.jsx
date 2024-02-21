@@ -21,14 +21,15 @@ const Scene = () => {
       });
     
       return (
-        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+        <div style={{ position: 'relative', width: '100%', height: '100vh', }}>
           <div
             style={{
               position: 'absolute',
               width: '100%',
-              height: '100%',
+              height: '100vh',
               background: `linear-gradient(${gradient.start}, ${gradient.end})`,
               zIndex: 0,
+              paddingTop:'40px',
             }}
           />
           <Canvas
@@ -37,15 +38,17 @@ const Scene = () => {
               top: 0,
               left: 0,
               width: '100%',
-              height: '100%',
-              background: 'transparent', // Make sure the canvas has a transparent background
+              height: '100vh',
+              background: 'transparent', 
             }}
             className="transition-colors duration-1000"
           >
+            <Suspense fallback={null}>
             <Environment preset="city" />
-            <ScrollControls horizontal pages={NUM_PAGES}>
-              <Blob setGradient={setGradient} /> {/* Pass setGradient instead of setBgColor */}
+            <ScrollControls horizontal={true} pages={NUM_PAGES}>
+              <Blob setGradient={setGradient} />
             </ScrollControls>
+            </Suspense>
           </Canvas>
         </div>
       );
@@ -53,7 +56,6 @@ const Scene = () => {
     
     export default Scene;
 const Blob = ({ setGradient }) => {
-  // This reference will give us direct access to the mesh
   const mesh = useRef();
   const hover = useRef(false);
 

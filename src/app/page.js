@@ -37,13 +37,13 @@ export default function Page() {
 
   return (
     <React.Fragment>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <>
           <Header />
           {/* <Wavy /> */}
-          <div className="w-screen h-screen overflow-hidden">
+          <div className="w-screen h-[100vh] overflow-hidden">
             <Scene />
           </div>
           <HomeIcons />
@@ -66,7 +66,7 @@ export default function Page() {
 
           <Footer />
         </>
-      )}
+      {/* )} */}
     </React.Fragment>
   );
 }
