@@ -22,9 +22,10 @@ import Footer from "@/components/Footer/Footer";
 import { StickyScrollRevealDemo } from "@/components/Scroll/Scroll";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { ThreeDCardDemo } from "@/components/3dcard/3dcard";
-import HomeIcons from '../components/HomeIcons/HomeIcons';
+import HomeIcons from "../components/HomeIcons/HomeIcons";
 import CalendlyComponent from "@/components/Calendly/CalendlyComponent";
 import { ParallaxScrollDemo } from "@/components/paralleax/paralleax";
+import Scene from "@/components/Blob/Blob";
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -33,35 +34,38 @@ export default function Page() {
     const loaderTimeout = setTimeout(() => setLoading(false), 10000);
     return () => clearTimeout(loaderTimeout);
   }, []);
-  
+
   return (
     <React.Fragment>
       {loading ? (
         <Loader />
       ) : (
-      <>
-        <Header />
-        <Wavy />
-        <HomeIcons/>
-        <Dashboard />
-        <HowItWorks/>
-        <HeroSection />
-        <BentoGridThirdDemo />
-        <ContentCards />
-        <Comparison />
-        <About />
-        <ThreeDCardDemo/>
-        <GoogleGeminiEffectDemo />
-        <StickyScrollRevealDemo/>
-        <CalendlyComponent/>
-        <ParallaxScrollDemo/>
-        <AlanAi />
-        <EventVault />
-        <Pricing />
-        <BackgroundBeamsDemo />
-       
-        <Footer />
-      </>
+        <>
+          <Header />
+          {/* <Wavy /> */}
+          <div className="w-screen h-screen overflow-hidden">
+            <Scene />
+          </div>
+          <HomeIcons />
+          <Dashboard />
+          <HowItWorks />
+          <HeroSection />
+          <BentoGridThirdDemo />
+          <ContentCards />
+          <Comparison />
+          <About />
+          <ThreeDCardDemo />
+          <GoogleGeminiEffectDemo />
+          <StickyScrollRevealDemo />
+          <CalendlyComponent />
+          <ParallaxScrollDemo />
+          <AlanAi />
+          <EventVault />
+          <Pricing />
+          <BackgroundBeamsDemo />
+
+          <Footer />
+        </>
       )}
     </React.Fragment>
   );
