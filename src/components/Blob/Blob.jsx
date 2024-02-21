@@ -1,5 +1,10 @@
 "use client";
-import { Environment, ScrollControls, useScroll, useTexture } from "@react-three/drei";
+import {
+  Environment,
+  ScrollControls,
+  useScroll,
+  useTexture,
+} from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import vertexPars from "@/shaders/vertex_pars.glsl";
@@ -10,20 +15,44 @@ import { MathUtils } from "three";
 
 const NUM_PAGES = 24;
 const Scene = () => {
-  const [bgColor, setBgColor] = useState("#BFEA7C");
-  return (
-      <Canvas style={{ backgroundColor: bgColor }} className="transition-colors duration-1000">
-        <Environment preset="city" />
-        <ScrollControls horizontal pages={NUM_PAGES}>
-          <Blob setBgColor={setBgColor} />
-        </ScrollControls>
-      </Canvas>
-  );
-};
-
-//
-export default Scene;
-const Blob = ({ setBgColor }) => {
+    const [gradient, setGradient] = useState({
+        start: '#00d5bb',
+        end: '#10a3d1',
+      });
+    
+      return (
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <div
+            style={{
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+              background: `linear-gradient(${gradient.start}, ${gradient.end})`,
+              zIndex: 0,
+            }}
+          />
+          <Canvas
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              background: 'transparent', // Make sure the canvas has a transparent background
+            }}
+            className="transition-colors duration-1000"
+          >
+            <Environment preset="city" />
+            <ScrollControls horizontal pages={NUM_PAGES}>
+              <Blob setGradient={setGradient} /> {/* Pass setGradient instead of setBgColor */}
+            </ScrollControls>
+          </Canvas>
+        </div>
+      );
+    };
+    
+    export default Scene;
+const Blob = ({ setGradient }) => {
   // This reference will give us direct access to the mesh
   const mesh = useRef();
   const hover = useRef(false);
@@ -50,14 +79,16 @@ const Blob = ({ setBgColor }) => {
   useFrame((state) => {
     const { clock } = state;
     if (!materialRef.current.userData.shader) return;
-    setBgColor(colors[Math.floor((data.range(0, 1) * NUM_PAGES) / 2)]);
+    setGradient(colors[Math.floor((data.range(0, 1) * NUM_PAGES) / 2)]);
     // updating the uniforms
-    materialRef.current.userData.shader.uniforms.u_time.value = 0.4 * clock.getElapsedTime();
-    materialRef.current.userData.shader.uniforms.u_intensity.value = MathUtils.lerp(
-      materialRef.current.userData.shader.uniforms.u_intensity.value,
-      (data.range(0, 1) * NUM_PAGES) / 2,
-      0.5,
-    );
+    materialRef.current.userData.shader.uniforms.u_time.value =
+      0.4 * clock.getElapsedTime();
+    materialRef.current.userData.shader.uniforms.u_intensity.value =
+      MathUtils.lerp(
+        materialRef.current.userData.shader.uniforms.u_intensity.value,
+        (data.range(0, 1) * NUM_PAGES) / 2,
+        0.5
+      );
     mesh.current.rotation.x = data.range(0, 1) * Math.PI * 2;
     mesh.current.rotation.y = data.range(0, 1) * Math.PI * 2;
     const scroll = data.range(0, 1) * NUM_PAGES;
@@ -99,13 +130,11 @@ const Blob = ({ setBgColor }) => {
       setClearCoat(0.2);
       setTexture("/media/03_gradient-secondary.1d6af076.png");
     } else if (scroll <= 20 && scroll > 18) {
-
       setRoughness(0.4);
       setMetallness(0.8);
       setClearCoat(0.1);
       setTexture("/media/02_gradient-primary-variation.b581b4bf.png");
     } else if (scroll <= 22 && scroll > 20) {
-
       setRoughness(0.8);
       setMetallness(0.2);
       setClearCoat(0.1);
@@ -114,7 +143,9 @@ const Blob = ({ setBgColor }) => {
       setTexture("/media/07_deep-ocean.4d28da9d.png");
     }
   });
-  const [texturePath, setTexture] = useState("/media/03_gradient-secondary.1d6af076.png");
+  const [texturePath, setTexture] = useState(
+    "/media/03_gradient-secondary.1d6af076.png"
+  );
   let texture = useTexture(texturePath);
   const [metallness, setMetallness] = useState(0.1);
   const [roughness, setRoughness] = useState(0.8);
@@ -144,13 +175,25 @@ const Blob = ({ setBgColor }) => {
           // injecting vertex and fragment shaders
           const parseVertexString = `#include <displacementmap_pars_vertex>`;
           const mainVertexString = `#include <displacementmap_vertex>`;
-          shader.vertexShader = shader.vertexShader.replace(parseVertexString, parseVertexString + vertexPars);
-          shader.vertexShader = shader.vertexShader.replace(mainVertexString, mainVertexString + vertexMain);
+          shader.vertexShader = shader.vertexShader.replace(
+            parseVertexString,
+            parseVertexString + vertexPars
+          );
+          shader.vertexShader = shader.vertexShader.replace(
+            mainVertexString,
+            mainVertexString + vertexMain
+          );
 
           const parseFragmentString = `#include <bumpmap_pars_fragment>`;
           const mainFragmentString = `vec4 diffuseColor = vec4( diffuse, opacity );`;
-          shader.fragmentShader = shader.fragmentShader.replace(parseFragmentString, parseFragmentString + fragmentPars);
-          shader.fragmentShader = shader.fragmentShader.replace(mainFragmentString,  fragmentMain);
+          shader.fragmentShader = shader.fragmentShader.replace(
+            parseFragmentString,
+            parseFragmentString + fragmentPars
+          );
+          shader.fragmentShader = shader.fragmentShader.replace(
+            mainFragmentString,
+            fragmentMain
+          );
           // console.log(shader.fragmentShader);
         }}
       />
