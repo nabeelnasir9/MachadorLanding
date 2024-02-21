@@ -6,9 +6,6 @@ import { BsDatabaseFillGear } from "react-icons/bs";
 import { FaExpeditedssl } from "react-icons/fa";
 import { BiSolidConversation } from "react-icons/bi";
 
-
-
-
 export const StickyScroll = ({ content }) => {
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef(null);
@@ -37,15 +34,20 @@ export const StickyScroll = ({ content }) => {
     "linear-gradient(to bottom right, var(--emerald-500), var(--cyan-500))",
     "linear-gradient(to top right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom left, var(--cyan-500), var(--emerald-500))",
-
   ];
-  const icons = [<IoDocumentAttachSharp color="white" size={150}/>, <BsDatabaseFillGear color="white" size={150}/>, <FaExpeditedssl color="white" size={150}/>, <BiSolidConversation color="white" size={150}/>];
+  const icons = [
+    <IoDocumentAttachSharp color="white" size={150} />,
+    <BsDatabaseFillGear color="white" size={150} />,
+    <FaExpeditedssl color="white" size={150} />,
+    <BiSolidConversation color="white" size={150} />,
+  ];
 
   return (
     <motion.div
-    animate={{
-      background: linearGradients[activeCard % linearGradients.length], transition:"ease-in-out duration-1000"
-    }}
+      animate={{
+        background: linearGradients[activeCard % linearGradients.length],
+        transition: "ease-in-out duration-1000",
+      }}
       className="h-[40rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
     >
@@ -86,9 +88,7 @@ export const StickyScroll = ({ content }) => {
         }}
         className="hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden"
       ></motion.div> */}
-      <motion.div
-        className="hidden lg:flex h-60 w-80 justify-center items-center rounded-md sticky top-10 overflow-hidden"
-      >
+      <motion.div className="hidden lg:flex h-60 w-80 justify-center items-center rounded-md sticky top-10 overflow-hidden">
         {icons[activeCard % icons.length]}
       </motion.div>
     </motion.div>

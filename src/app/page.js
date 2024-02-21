@@ -49,7 +49,7 @@ export default function Page() {
         <BentoGridThirdDemo />
         <ContentCards />
         <Comparison />
-        {/* <About /> */}
+        <About />
         <ThreeDCardDemo/>
         <GoogleGeminiEffectDemo />
         <StickyScrollRevealDemo/>
