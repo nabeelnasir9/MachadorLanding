@@ -20,7 +20,7 @@ function Navbar({ className }) {
       <Menu setActive={setActive} className="flex items-center justify-around">
         <Link href="/">
         {/* <h1 className={styles.LogoHeader}>machador.</h1> */}
-        <Image src="/5.jpg" width={120} height={120}/>
+        <Image src="/logooo.png" width={120} height={120}/>
         </Link>
         <div className="flex justify-between items-center gap-10">
           <MenuItem setActive={setActive} active={active} item="Enterprise">
@@ -44,7 +44,7 @@ function Navbar({ className }) {
             </div>
           </MenuItem>
 
-          <Link href="/Security">
+          <Link href="/security">
           <MenuItem setActive={setActive} active={active} item="Security">
             <div className="text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem

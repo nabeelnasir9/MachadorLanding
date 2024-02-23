@@ -12,7 +12,7 @@ import { Wavy } from "@/components/Wavy/Wavy";
 import About from "@/components/About/About";
 import { AnimatedTooltipPreview } from "@/components/Tooltip/Tooltip";
 import { SVGMaskEffectDemo } from "@/components/RevealCard/RevealCard";
-import { InfiniteMovingCardsDemo } from "@/components/Testimonial/Testimonial";
+// import TestimonialComponent, { InfiniteMovingCardsDemo } from "@/components/Testimonial/Testimonial";
 import Pricing from "@/components/Pricing/Pricing";
 import Loader from "@/components/Loader/Loader";
 import Comparison from "@/components/Comparison/Comparison";
@@ -26,6 +26,11 @@ import HomeIcons from "../components/HomeIcons/HomeIcons";
 import CalendlyComponent from "@/components/Calendly/CalendlyComponent";
 import { ParallaxScrollDemo } from "@/components/paralleax/paralleax";
 import Scene from "@/components/Blob/Blob";
+import Testimonial from '../components/Testimonial/Testimonial';
+import { AnimatedPinDemo } from "@/components/3dPin/3dPin";
+import FAQ from "@/components/FAQS/FAQS";
+
+
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -37,14 +42,14 @@ export default function Page() {
 
   return (
     <React.Fragment>
-      {/* {loading ? (
+      {loading ? (
         <Loader />
-      ) : ( */}
+      ) : (
         <>
           <Header />
           {/* <Wavy /> */}
           <div className="w-screen h-[100vh] overflow-hidden">
-            <Scene />
+            {/* <Scene /> */}
           </div>
           <HomeIcons />
           <Dashboard />
@@ -57,16 +62,18 @@ export default function Page() {
           <ThreeDCardDemo />
           <GoogleGeminiEffectDemo />
           <StickyScrollRevealDemo />
-          <CalendlyComponent />
-          <ParallaxScrollDemo />
+          {/* <CalendlyComponent /> */}
+          {/* <ParallaxScrollDemo /> */}
           <AlanAi />
-          <EventVault />
-          <Pricing />
-          <BackgroundBeamsDemo />
-
+          {/* <AnimatedPinDemo/> */}
+          {/* <EventVault /> */}
+          {/* <Pricing /> */}
+          {/* <BackgroundBeamsDemo /> */}
+          <Testimonial/>
+          <FAQ/>
           <Footer />
         </>
-      {/* )} */}
+       )}
     </React.Fragment>
   );
 }

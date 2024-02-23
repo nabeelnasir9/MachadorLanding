@@ -6,7 +6,7 @@ export default function Pricing() {
   return (
     <div className="pricing">
       <h1 className="text-center pt-12 pb-7 font-bold text-4xl text-black">
-          Pricing
+        Pricing
       </h1>
       <div className="pricing-wrapper">
         <div className="pricing-plan-item" data-aos="fade-right">

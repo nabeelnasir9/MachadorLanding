@@ -3,8 +3,15 @@ import "./Abouts.css";
 
 export default function About() {
   return (
-    <div className="about-section">
-      {/* <h2 style={{textAlign:"center"}}>Tools integrated in Machador</h2> */}
+      <div className="AboutDetailsWrapper">
+        <div className="AboutDetailsContainer">
+          <div className="LeftAboutDetails">
+          <h1 className="LeftAboutDetailsHeading">
+          Integrate effortlessly across multiple platforms
+</h1>
+<p className="LeftAboutDetailsDescription">Meet your network where they are and build familiarity with infinitely more people, on a hyper-personalized level. Whether you want your clone embedded on your own website, integrated with our API, in Slack, LinkTree, Instagram, TikTok, email, SMS or somewhere else, your Delphi clone can be used anywhere to engage with your fans.</p>
+</div>
+      
       <div className="atomContainer">
         <span className="nucleus">
           Explore <span>Our Tools,</span> That We Use
@@ -72,5 +79,7 @@ export default function About() {
         />
       </div>
     </div>
+    </div>
+
   );
 }
