@@ -2,6 +2,7 @@
 import '../Styles/Secure.css';
 const security = () => {
   return (
+    <>
     <div className="introductionMainContainer" data-aos="fade-up">
         <div className="security-layout_component">
           <div className="margin-bottom">
@@ -599,6 +600,7 @@ const security = () => {
           </div>
         </div>
       </div>
+      </>
   )
 }
 

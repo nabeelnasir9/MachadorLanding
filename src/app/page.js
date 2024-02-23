@@ -29,7 +29,7 @@ import Scene from "@/components/Blob/Blob";
 import Testimonial from '../components/Testimonial/Testimonial';
 import { AnimatedPinDemo } from "@/components/3dPin/3dPin";
 import FAQ from "@/components/FAQS/FAQS";
-
+import Render from '../components/Render/Render';
 
 
 export default function Page() {
@@ -47,30 +47,33 @@ export default function Page() {
       ) : (
         <>
           <Header />
-          {/* <Wavy /> */}
-          <div className="w-screen h-[100vh] overflow-hidden">
-            {/* <Scene /> */}
-          </div>
+          <Wavy />
+          {/* <div className="w-screen h-[100vh] overflow-hidden">
+            <Scene />
+          </div> */}
           <HomeIcons />
           <Dashboard />
+          <Render/>
           <HowItWorks />
           <HeroSection />
-          <BentoGridThirdDemo />
           <ContentCards />
+          
           <Comparison />
+                    <BentoGridThirdDemo />
+
           <About />
           <ThreeDCardDemo />
           <GoogleGeminiEffectDemo />
           <StickyScrollRevealDemo />
-          {/* <CalendlyComponent /> */}
+          <CalendlyComponent />
           {/* <ParallaxScrollDemo /> */}
           <AlanAi />
           {/* <AnimatedPinDemo/> */}
           {/* <EventVault /> */}
-          {/* <Pricing /> */}
+          <Pricing />
           {/* <BackgroundBeamsDemo /> */}
-          <Testimonial/>
           <FAQ/>
+          <Testimonial/>
           <Footer />
         </>
        )}

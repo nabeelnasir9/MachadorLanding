@@ -28,9 +28,9 @@
     filter: blur(40px);
     background-image: linear-gradient(
       90deg,
-      rgba(77, 84, 255, 0.64),
-      rgba(208, 63, 144, 0.64) 64%,
-      rgba(255, 56, 104, 0.64)
+      rgba(0, 213, 187, 1),
+      rgba(16, 153, 209, 1)64%,
+      rgba(16, 153, 209, 1),
     );
     border-radius: 22px;
     position: absolute;

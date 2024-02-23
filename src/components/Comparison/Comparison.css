@@ -10,11 +10,11 @@
     border-radius: 10px;
     box-shadow: rgba(0,213,187,1)-5px 10px 20px 0;
   }
-  .mainCoparisonContainer {
+  .mainComparisonContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10rem 20px;
+    padding: 5rem 20px;
     max-width: 1500px;
     margin: 0 auto 50px auto;
     gap: 150px;

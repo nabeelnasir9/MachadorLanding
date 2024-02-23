@@ -93,8 +93,8 @@ export const GoogleGeminiEffect = ({
           height={50}
           className="LeftGeminiIcon4"
         />
-      </motion.div> */}
-      {/* {iconStyles.end.map((style, index) => (
+      </motion.div> 
+       {iconStyles.end.map((style, index) => (
         <motion.div
           key={`end-icon-${index}`}
           className="RightIconsOfGemini"
@@ -107,7 +107,7 @@ export const GoogleGeminiEffect = ({
             className="RightGeminiIcon1"
           />
         </motion.div>
-      ))} */}
+      ))}  */}
       <div className="w-full h-[890px] -top-80 md:-top-40 flex items-center justify-center bg-red-transparent absolute">
         <button className="font-bold bg-gradient-to-r from-blue-400 to-teal-500 rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-white text-xs w-fit mx-auto">
           Machador Security

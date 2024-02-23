@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .introductionMainContainer {
     max-width: 1500px;
     margin: 0 auto;
@@ -3472,6 +3475,8 @@
     padding-right: 2rem;
     display: flex;
     position: relative;
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
+
   }
   
   .section_stack-heading {
@@ -3500,12 +3505,14 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 24px;
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
+
   }
   
   .section_stack-item.item--2 {
     border-top: 1px solid var(--gray_700);
     border-bottom: 0px none var(--gray_700);
-    background-color: var(--primary900);
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
@@ -3515,7 +3522,7 @@
   .section_stack-item.item--3 {
     border-top: 1px solid var(--gray_700);
     border-bottom: 0px none var(--gray_700);
-    background-color: var(--primary900);
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
@@ -3525,7 +3532,7 @@
   .section_stack-item.item--4 {
     border-top: 1px solid var(--gray_700);
     border-bottom: 0px none var(--gray_700);
-    background-color: var(--primary900);
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     flex-direction: column;
     flex: 0 auto;
     justify-content: space-between;
@@ -3537,7 +3544,7 @@
   .section_stack-item.item--5 {
     border-top: 1px solid var(--gray_700);
     border-bottom: 1px none var(--gray_700);
-    background-color: var(--primary900);
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
@@ -3547,7 +3554,7 @@
   .section_stack-item.item--6 {
     border-top: 1px solid var(--gray_700);
     border-bottom: 0px none var(--gray_700);
-    background-color: var(--primary900);
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
@@ -3555,7 +3562,7 @@
   }
   
   .section_stack-item.item--4 {
-    background: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     border-top: 1px solid #4a515d;
     border-bottom: 0 #4a515d;
     flex-direction: column;
@@ -3567,7 +3574,7 @@
   }
   
   .section_stack-item.item--2 {
-    background: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     border-top: 1px solid #4a515d;
     border-bottom: 0 #4a515d;
     flex-direction: column;
@@ -3577,7 +3584,7 @@
   }
   
   .section_stack-item.item--5 {
-    background: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     border-top: 1px solid #4a515d;
     border-bottom: 1px #4a515d;
     flex-direction: column;
@@ -3587,7 +3594,7 @@
   }
   
   .section_stack-item.item--3 {
-    background: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     border-top: 1px solid #4a515d;
     border-bottom: 0 #4a515d;
     flex-direction: column;
@@ -3597,7 +3604,7 @@
   }
   
   .section_stack-item.item--6 {
-    background: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    background: linear-gradient( 111.4deg,  rgb(2, 157, 126) 6.5%, rgb(39, 159, 229) 93.2% );
     border-top: 1px solid #4a515d;
     border-bottom: 0 #4a515d;
     flex-direction: column;
