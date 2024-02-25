@@ -7,25 +7,25 @@ const faqs = [
     id: 1,
     question: 'Add your data sets',
     answer: 'Start by adding your structured or unstructured data sets into the system.',
-    image: '/ico.png',
+    image: '/oop.png',
   },
   {
     id: 2,
     question: 'Train the AI Now',
     answer: 'Use our tools to train the AI on your data, customizing it for your needs.',
-    image: '/ico1.png',
+    image: '/oop2.png',
   },
   {
     id: 3,
-    question: 'Have your 24/7 assistant',
+    question: 'Have your 24/7 Clone',
     answer: 'Once trained, your AI assistant is ready to work for you 24/7, handling tasks and queries.',
-    image: '/ico2.png',
+    image: '/oop3.png',
   },
   {
     id: 4,
     question: 'Monitor and Improve',
     answer: 'Continuously monitor performance and make improvements to keep your AI assistant at peak efficiency.',
-    image: '/log-1.png',
+    image: '/oop4.png',
   },
 ];
 

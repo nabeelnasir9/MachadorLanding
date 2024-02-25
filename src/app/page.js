@@ -26,11 +26,10 @@ import HomeIcons from "../components/HomeIcons/HomeIcons";
 import CalendlyComponent from "@/components/Calendly/CalendlyComponent";
 import { ParallaxScrollDemo } from "@/components/paralleax/paralleax";
 import Scene from "@/components/Blob/Blob";
-import Testimonial from '../components/Testimonial/Testimonial';
+import Testimonial from "../components/Testimonial/Testimonial";
 import { AnimatedPinDemo } from "@/components/3dPin/3dPin";
 import FAQ from "@/components/FAQS/FAQS";
-import Render from '../components/Render/Render';
-
+import Render from "../components/Render/Render";
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -42,42 +41,41 @@ export default function Page() {
 
   return (
     <React.Fragment>
-      {/* {loading ? (
+      {loading ? (
         <Loader />
-      ) : ( */}
-        <>
-          <Header />
-          {/* <Wavy /> */}
-          {/* <div className="w-screen h-[100vh] overflow-hidden">
+      ) : (
+      <>
+        <Header />
+        {/* <Wavy /> */}
+        {/* <div className="w-screen h-[100vh] overflow-hidden">
             <Scene />
           </div> */}
-          <HomeIcons />
-          <Dashboard />
-          <Render/>
-          <HowItWorks />
-          <HeroSection />
-          <ContentCards />
-          <About />
+        <HomeIcons />
+        <Dashboard />
+        <Render />
+        <HowItWorks />
+        <HeroSection />
+        <ContentCards />
+        <About />
 
-          
-          <Comparison />
-                    <BentoGridThirdDemo />
+        <Comparison />
+        <BentoGridThirdDemo />
 
-          <ThreeDCardDemo />
-          <GoogleGeminiEffectDemo />
-          <StickyScrollRevealDemo />
-          <CalendlyComponent />
-          {/* <ParallaxScrollDemo /> */}
-          <AlanAi />
-          {/* <AnimatedPinDemo/> */}
-          {/* <EventVault /> */}
-          <Pricing />
-          {/* <BackgroundBeamsDemo /> */}
-          <FAQ/>
-          <Testimonial/>
-          <Footer />
-        </>
-       {/* )} */}
+        <ThreeDCardDemo />
+        <GoogleGeminiEffectDemo />
+        <StickyScrollRevealDemo />
+        <CalendlyComponent />
+        {/* <ParallaxScrollDemo /> */}
+        <AlanAi />
+        {/* <AnimatedPinDemo/> */}
+        {/* <EventVault /> */}
+        <Pricing />
+        {/* <BackgroundBeamsDemo /> */}
+        <FAQ />
+        <Testimonial />
+        <Footer />
+      </>
+      )}
     </React.Fragment>
   );
 }
