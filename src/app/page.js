@@ -42,12 +42,12 @@ export default function Page() {
 
   return (
     <React.Fragment>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <>
           <Header />
-          <Wavy />
+          {/* <Wavy /> */}
           {/* <div className="w-screen h-[100vh] overflow-hidden">
             <Scene />
           </div> */}
@@ -76,7 +76,7 @@ export default function Page() {
           <Testimonial/>
           <Footer />
         </>
-       )}
+       {/* )} */}
     </React.Fragment>
   );
 }
