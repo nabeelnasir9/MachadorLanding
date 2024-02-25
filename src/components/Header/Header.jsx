@@ -9,69 +9,84 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigations = [
+   
     {
       name: "Enterprise",
-      link: "/",
-    },
-    {
-      name: "Ambassedor",
-      link: "/about/overview",
+      link: "/Enterprise",
       subPages: [
         {
-          name: "Overview",
-          link: "/about/overview",
+          name: "Customized Solutions",
+          link: "/Enterprise",
         },
         {
-          name: "Vision",
-          link: "/about/overview#vision",
+          name: "Data Privacy & Security",
+          link: "/Enterprise",
         },
         {
-          name: "Mission",
-          link: "/about/overview#mission",
+          name: "Training & Support",
+          link: "/Enterprise",
         },
         {
-          name: "President's Message",
-          link: "/about/president-message",
+          name: "Success Stories",
+          link: "/Enterprise",
         },
         {
-          name: "Quality Objectives",
-          link: "/about/quality-objectives",
+          name: "Contact & Inquiry",
+          link: "/Enterprise",
+        },
+      ],
+    },
+    
+    {
+      name: "How it Works",
+      link: "/about",
+      subPages: [
+        {
+          name: "Security",
+          link: "/about/security",
+        },
+        {
+          name: "Features",
+          link: "/API",
         },
       ],
     },
     {
-      name: "Security",
-      link: "/services/industrial",
+      name: "Be a Machador",
+      link: "/partner",
       subPages: [
         {
-          name: "Industrial Works",
-          link: "/services/industrial",
+          name: "Affiliate Programme",
+          link: "/partner",
         },
         {
-          name: "Mechanical Works",
-          link: "/services/mechanical",
+          name: "Become a Partner",
+          link: "/partner",
+        }
+      ],
+    },
+    
+    {
+      name: "Company",
+      link: "/company",
+      subPages: [
+        {
+          name: "History",
+          link: "/company",
         },
         {
-          name: "Plants Works",
-          link: "/services/plants",
+          name: "Mission",
+          link: "/mission",
         },
         {
-          name: "Welding Works",
-          link: "/services/welding",
-        },
-        {
-          name: "Shutdown Works",
-          link: "/services/shutdowns",
-        },
-        {
-          name: "Instrumentation Works",
-          link: "/services/instrumentation",
+          name: "Team",
+          link: "/team",
         },
       ],
     },
     {
       name: "Pricing",
-      link: "/clients",
+      link: "/pricing",
     },
   
   ];
@@ -203,20 +218,7 @@ export default function Header() {
           ))}
         </ul>
         <div className={styles.phoneContainer}>
-          <img
-            src="/world.png"
-            alt=""
-            style={{
-              width: 20,
-              height: 20,
-              marginLeft: 10,
-            }}
-          />
-          {/* <select value={locale} onChange={handleOnChange}>
-            <option value={"en"}>En</option>
-            <option value={"ar"}>Ar</option>
-          </select> */}
-        </div>
+               </div>
       </header>
     </div>
   );

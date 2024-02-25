@@ -57,11 +57,12 @@ export default function Page() {
           <HowItWorks />
           <HeroSection />
           <ContentCards />
+          <About />
+
           
           <Comparison />
                     <BentoGridThirdDemo />
 
-          <About />
           <ThreeDCardDemo />
           <GoogleGeminiEffectDemo />
           <StickyScrollRevealDemo />

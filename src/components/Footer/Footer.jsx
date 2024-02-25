@@ -13,10 +13,10 @@ function Footer() {
 					<ul>
 						<Image src="/logoo.png" width="300" height="300"/>
 						<div className="flex gap-6 pb-5">
-							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
+							{/* <FaInstagram className="text-2xl cursor-pointer text-yellow-600" />
+							<FaTwitter className="text-2xl cursor-pointer text-blue-600" />
+							<FaLinkedin className="text-2xl cursor-pointer text-blue-600" />
+							<FaYoutube className="text-2xl cursor-pointer text-red-600" /> */}
 						</div>
 					</ul>
 				</div>
@@ -78,8 +78,8 @@ function Footer() {
 					</ul>
 				</div>
 			</div>
-			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
-				<h1 className=" text-gray-800 font-semibold">
+			<div className="flex flex-col justify-center items-center text-center p-5 bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] ">
+				<h1 className=" text-white font-semibold">
 					© 2024 All rights reserved with{" "}
 					<span className="hover:text-blue-600 font-semibold cursor-pointer">
 						Machador{" "}

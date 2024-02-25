@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './Render.module.css'; // CSS Module for styling
+import styles from './Render.module.css'; 
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const faqs = [
@@ -30,11 +30,10 @@ const faqs = [
 ];
 
 const HowItWorks = () => {
-  // Initialize activeIndex to 0 to show the first FAQ by default
-  const [activeIndex, setActiveIndex] = useState(0); // Changed from null to 0
+  const [activeIndex, setActiveIndex] = useState(0); 
 
   const toggleFAQ = (index) => {
-    setActiveIndex(index === activeIndex ? null : index); // Toggle active FAQ
+    setActiveIndex(index === activeIndex ? null : index); 
   };
 
   return (
@@ -74,7 +73,6 @@ const HowItWorks = () => {
           </div>
         </div>
         <div className={styles.imageSection}>
-          {/* Ensure an image is always shown, default to the first if activeIndex is null */}
           <img src={faqs[activeIndex !== null ? activeIndex : 0].image} alt="FAQ Illustration" className={styles.faqImage} />
         </div>
       </div>

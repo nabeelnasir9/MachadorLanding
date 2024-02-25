@@ -14,7 +14,7 @@
   }
   
   .heading {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 0px;
     color: black;
     font-weight: 600;
@@ -33,7 +33,7 @@
   
   .content {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     color: black;
     /* align-items: center; */
     padding-top: 7rem;
@@ -72,7 +72,7 @@
   .faqQuestions{
     display: flex;
     gap: 20px;
-    font-size: 30px;
+    font-size: 25px;
     align-items: center;
     justify-content: space-between;
   }
@@ -80,14 +80,13 @@
   .question {
     font-weight: bold;
     color: black;
-
+    text-align: left;
   }
   
   .answer {
     margin-top: 10px;
     color: black;
     text-align: left;
-    max-width: 400px;
     margin-left: 40px;
 
   }
@@ -96,11 +95,12 @@
     margin-top: 10px;
     color: black;
     text-align: left;
-    max-width: 700px;
+    max-width: 600px;
     transition: all 1s ease;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
+    font-size: 14px;
 
   }
   
@@ -114,6 +114,7 @@
   .active {
     opacity: 1;
     max-height: 500px; /* Adjust as needed */
+    max-width: 500px;
   }
   
   .inactive {
@@ -122,20 +123,17 @@
   }
 
   .imageSection {
-    flex: 1;
-    padding: 10rem;
-    position: relative;
-    right: -100px;
+    padding: 5rem;
     border-radius: 30px;
     background: linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%);
     transition: all 1s ease;
-
   }
   
   .faqImage {
     width: 100%;
     height: auto;
     transition: all 1s ease;
+    
 
   }
   
@@ -172,4 +170,25 @@
     animation: ripple 0.6s linear infinite;
   }
   
+
+  @media screen and (max-width: 900px){
+    .content{
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .faqQuestions{
+      font-size: 18px;
+    }
+    .answer {
+      margin-top: 10px;
+      color: black;
+      text-align: left;
+      max-width: 400px;
+      margin-left: 40px;
+  
+      font-size: 13px;
+    }
+
+  }
   
