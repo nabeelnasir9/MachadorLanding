@@ -76,14 +76,14 @@ export default function Example() {
                   <h3
                     id={tier.id}
                     className={classNames(
-                      tier.mostPopular ? 'text-indigo-600' : 'text-gray-900',
+                      tier.mostPopular ? 'text-[#0ED0B5]' : 'text-gray-900',
                       'text-lg font-semibold leading-8'
                     )}
                   >
                     {tier.name}
                   </h3>
                   {tier.mostPopular ? (
-                    <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+                    <p className="rounded-full bg-[#0ED0B5] px-2.5 py-1 text-xs font-semibold leading-5 text-white">
                       Most popular
                     </p>
                   ) : null}
@@ -107,9 +107,9 @@ export default function Example() {
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                    ? 'bg-indigo-600 text-white shadow-sm hover:bg-indigo-500'
-                    : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300',
-                  'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    ? 'bg-[#0ED0B5] text-white shadow-sm hover:bg-[#0ED0B5]'
+                    : 'text-[#0ED0B5] ring-1 ring-inset ring-[#0ED0B5] hover:ring-indigo-300',
+                  'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0ED0B5]'
                 )}
               >
                 Buy plan

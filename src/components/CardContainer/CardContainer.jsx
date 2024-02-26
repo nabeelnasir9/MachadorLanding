@@ -152,6 +152,7 @@ const SkeletonTwo = () => {
         ></motion.div>
       ))}
     </motion.div>
+  // <Image src="/11.png" width="100px" height="100px"/>
   );
 };
 const SkeletonThree = () => {
@@ -373,10 +374,10 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "AI Content Generation",
+    title: "AI Automated Answers:",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        Imagine a robot that can answer most of the questions your new employee have. This means you don't have to do it yourself, saving you time.
       </span>
     ),
     header: <SkeletonOne />,
@@ -384,10 +385,10 @@ const items = [
     icon: <IconClipboardCopy className="h-5 w-5 text-white" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Always Available",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        This smart robot doesn't sleep! It can help your employee anytime, making sure they always get the help they need.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -406,11 +407,10 @@ const items = [
     icon: <IconSignature className="h-5 w-5 text-white" />,
   },
   {
-    title: "Your Clone for you 24/7",
+    title: "Your Clone for you 24/7, In many faces",
     description: (
       <span className="text-sm">
-        Have your partner 24/7 to help your business
-      </span>
+Since the AI handles many of the questions, you don't need to spend as much time and money training new staff on common inquiries.      </span>
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",

@@ -69,10 +69,12 @@ export default function Page() {
         {/* <AnimatedPinDemo/> */}
         {/* <EventVault /> */}
         <Pricing />
-        {/* <BackgroundBeamsDemo /> */}
-        <FAQ />
         <Testimonial />
         <CTA/>
+
+
+        {/* <BackgroundBeamsDemo /> */}
+        <FAQ />
       </>
     </React.Fragment>
   );

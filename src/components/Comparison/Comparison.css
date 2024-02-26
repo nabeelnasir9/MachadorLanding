@@ -105,3 +105,16 @@
   .rightSectionLabel svg {
     transform: rotate(180deg);
   }
+
+
+
+  @media screen and (max-width: 768px) {
+    .mainComparisonContainer {
+    flex-direction: column;
+    }
+    .left,
+  .right {
+    width: 50%;
+    position: relative;
+  }
+  }

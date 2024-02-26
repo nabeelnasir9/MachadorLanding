@@ -22,18 +22,18 @@ function Footer() {
         </div>
         <div className="p-5">
           <ul>
-            <p className="text-gray-800 font-bold text-2xl pb-4">Product</p>
+            <p className="text-gray-800 font-bold text-2xl pb-4">Enterprise</p>
             <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-              Stocks
+            Security
+            </li>
+            <li className="text-gray-500 text-md pb-2 font-medium hover:text-blue-600 cursor-pointer">
+              API
             </li>
             <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-              Futures & Options
+              Customized Solution
             </li>
             <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-              Mutual Funds
-            </li>
-            <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-              Fixed deposits
+              Training & Support
             </li>
           </ul>
         </div>

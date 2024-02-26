@@ -171,30 +171,26 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Is Machador free to use?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "We offer a free but limited version. You can get access to 50 messages per month and upgrade at any time if you need more.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "How Accurate are the answers from Machador?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "The accuracy of answers from Machador depends on the quality and relevance of the training data provided by you. With proper training, Machador can provide accurate responses to customer queries in seconds. However, its important to note that as an AI model, it may occasionally generate incorrect or incomplete answers, especially when faced with ambiguous or unfamiliar questions. Ongoing monitoring and updates to the training data can help improve the accuracy over time.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Have your 24/7 assistant",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Once trained, your AI assistant is ready to work for you 24/7, handling tasks and queries.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Can i use GPT-4?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Yes, GPT-4 is available on the custom plan however we recommend sticking to GPT-3.5 for now as its faster and more accurate.",
   },
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
+  
   // More questions...
 ]
 

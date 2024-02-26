@@ -6,10 +6,12 @@ import { SiGmail } from "react-icons/si";
 import { DiTrello } from "react-icons/di";
 import { SiZapier } from "react-icons/si";
 import { GiFireworkRocket } from "react-icons/gi";
-import { BsGraphUpArrow } from "react-icons/bs";
+import { VscGraphLine } from "react-icons/vsc";
 import { MdPaid } from "react-icons/md";
 import { FaTasks } from "react-icons/fa";
 import { FaClockRotateLeft } from "react-icons/fa6";
+import { FaArrowTrendUp } from "react-icons/fa6";
+
 
 
 
@@ -51,7 +53,7 @@ export const projects = [
     description:
       "Imagine getting a clearer picture of what your customers want and need. Machador can analyze conversations and interactions, providing valuable insights that can help shape your services or products to better match customer expectations.",
     link: "",
-    icons: <BsGraphUpArrow size={40} />,
+    icons: <VscGraphLine size={40} />,
   },
   {
     title: "Cost-Effective",
@@ -71,15 +73,15 @@ export const projects = [
   {
     title: "Always On Support",
     description:
-      "Imagine having a team member who never sleeps and is always there to answer questions from your customers, no matter the time of day. Machador can be that team member, offering instant answers and support, which means happier customers and fewer headaches for your team.",
+      "As your business grows, Machador grows with you. It can handle an increasing volume of interactions without the need for you to hire more staff, making it easier to scale your operations.",
     link: "",
     icons: <FaClockRotateLeft size={40} />,
   },
   {
-    title: "Zapier",
+    title: "Scalability",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      "As your business grows, Machador grows with you. It can handle an increasing volume of interactions without the need for you to hire more staff, making it easier to scale your operations.",
     link: "",
-    icons: <SiZapier size={40} />,
+    icons: <FaArrowTrendUp size={40} />,
   },
 ];

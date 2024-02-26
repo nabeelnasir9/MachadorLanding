@@ -9,8 +9,7 @@ export default function CTA() {
             Start Using Machador,
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-white-300">
-            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
-            commodo do ea.
+          Ready to transform your onboarding experience? Click here to unleash the power of AI, streamline your process, and ensure your customers receive instant, 24/7 support. No coding needed. Start saving time and money today!
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
