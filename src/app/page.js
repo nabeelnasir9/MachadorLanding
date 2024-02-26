@@ -30,6 +30,7 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import { AnimatedPinDemo } from "@/components/3dPin/3dPin";
 import FAQ from "@/components/FAQS/FAQS";
 import Render from "../components/Render/Render";
+import CTA from "@/components/CTA/CTA";
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -41,11 +42,10 @@ export default function Page() {
 
   return (
     <React.Fragment>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
+      ) : ( */}
       <>
-        <Header />
         {/* <Wavy /> */}
         {/* <div className="w-screen h-[100vh] overflow-hidden">
             <Scene />
@@ -53,12 +53,14 @@ export default function Page() {
         <HomeIcons />
         <Dashboard />
         <Render />
-        <HowItWorks />
-        <HeroSection />
+        {/* <HowItWorks /> */}
         <ContentCards />
         <About />
-
         <Comparison />
+
+
+        {/* <HeroSection /> */}
+
         <BentoGridThirdDemo />
 
         <ThreeDCardDemo />
@@ -72,10 +74,11 @@ export default function Page() {
         <Pricing />
         {/* <BackgroundBeamsDemo /> */}
         <FAQ />
+
         <Testimonial />
-        <Footer />
+        <CTA/>
       </>
-      )}
+      {/* )} */}
     </React.Fragment>
   );
 }

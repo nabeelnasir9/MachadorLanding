@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
 
@@ -46,8 +46,23 @@ export function ThreeDCardDemo() {
     // Add 4 more card data objects here...
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === cardsData.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? cardsData.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <div className="overflow-hidden">
+       <AnimatePresence>
       <motion.div
         drag="x"
         dragConstraints={{ left: -1000, right: 0 }}
@@ -106,6 +121,19 @@ export function ThreeDCardDemo() {
           </motion.div>
         ))}
       </motion.div>
+      </AnimatePresence>
+      <button
+        onClick={handlePrev}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2"
+      >
+        Prev
+      </button>
+      <button
+        onClick={handleNext}
+        className="absolute right-0 top-1/2 transform -translate-y-1/2"
+      >
+        Next
+      </button>
     </div>
   );
 }

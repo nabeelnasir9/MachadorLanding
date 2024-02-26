@@ -127,7 +127,7 @@
 
   .imageSection {
     padding: 1rem;
-    border-radius: 30px;
+    border-radius: 20px;
     background: linear-gradient(27deg, rgba(16,163,209,1) 0%, rgba(0,213,187,1) 100%);
     /* background-color: black; */
     transition: all 1s ease;

@@ -1,3 +1,4 @@
+"use client"
 import React, {useState} from "react";
 import styles from "./Header.module.css";
 import Image from "next/image";
@@ -43,7 +44,7 @@ export default function Header() {
       subPages: [
         {
           name: "Security",
-          link: "/about/security",
+          link: "/Security",
         },
         {
           name: "Features",
@@ -80,13 +81,13 @@ export default function Header() {
         },
         {
           name: "Team",
-          link: "/team",
+          link: "/Team",
         },
       ],
     },
     {
       name: "Pricing",
-      link: "/pricing",
+      link: "/Pricing",
     },
   
   ];
@@ -170,15 +171,9 @@ export default function Header() {
               </ul>
             </div>
             <div className={styles.mobileLang}>
-              <img
-                src="/world.png"
-                alt=""
-                style={{
-                  width: 20,
-                  height: 20,
-                  marginLeft: 10,
-                }}
-              />{" "}
+             
+            <button style={{color:"black"}}>Get Started</button>
+          <button style={{color:"black"}}>Login</button>
               {/* <select value={locale} onChange={handleOnChange}>
                 <option value={"en"}>En</option>
                 <option value={"ar"}>Ar</option>
@@ -218,8 +213,11 @@ export default function Header() {
           ))}
         </ul>
         <div className={styles.phoneContainer}>
+          <button style={{color:"black"}}>Get Started</button>
+          <button style={{color:"black"}}>Login</button>
                </div>
       </header>
+      
     </div>
   );
 }

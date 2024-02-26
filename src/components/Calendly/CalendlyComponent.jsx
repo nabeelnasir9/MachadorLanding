@@ -7,13 +7,12 @@ const CalendlyComponent = () => {
   return (
     <div className="flex w-full h-screen">
       {/* Image Container */}
-      <div className="w-1/2 h-full">
-        {/* <Image src="/22.png" alt="Meeting" className="object-cover w-full h-full" width="1000" height="1000"/> */}
+      {/* <div className="w-1/2 h-full">
         <iframe src="https://lottie.host/embed/c344f162-2f98-4aed-9e98-913735614827/pw1uiHUGBR.json" width="1000" height="1000" background="transparent" speed="1" className="object-cover w-full h-full"></iframe>
-      </div>
+      </div> */}
 
       {/* Calendly Embed Container */}
-      <div className="w-1/2 h-full flex justify-center items-center bg-white">
+      <div className="w-full h-full flex justify-center items-center bg-white">
         <iframe
           src={calendlyUrl}
           width="100%"

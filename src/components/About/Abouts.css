@@ -7,6 +7,7 @@ margin:0 auto;
 display:flex;
 justify-content: space-between;
 align-items:center;
+max-width: 1280px;
 
 
 }
@@ -102,6 +103,20 @@ align-items:center;
       font-size: 21px;
       width: 50%;
     }
+    .AboutDetailsContainer{
+      margin:0 auto;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      max-width: 1280px;
+      flex-direction: column;
+      
+      
+      }
+      .LeftAboutDetails{
+        max-width:800px;
+        margin:0 auto;
+      }
   }
   
   @media (min-width: 769px) {

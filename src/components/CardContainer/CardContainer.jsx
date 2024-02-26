@@ -406,7 +406,7 @@ const items = [
     icon: <IconSignature className="h-5 w-5 text-white" />,
   },
   {
-    title: "Your Partner for you 24/7",
+    title: "Your Clone for you 24/7",
     description: (
       <span className="text-sm">
         Have your partner 24/7 to help your business
