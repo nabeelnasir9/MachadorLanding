@@ -32,6 +32,7 @@ import FAQ from "@/components/FAQS/FAQS";
 import Render from "../components/Render/Render";
 import CTA from "@/components/CTA/CTA";
 import Trusties from "@/components/Trustes/Trusties";
+import Ourteams from "@/components/OurTeam/OurTeam";
 
 
 export default function Page() {
@@ -68,6 +69,7 @@ export default function Page() {
         {/* <AlanAi /> */}
         {/* <AnimatedPinDemo/> */}
         {/* <EventVault /> */}
+        {/* <Ourteams/> */}
         <Pricing />
         <Testimonial />
         <CTA/>

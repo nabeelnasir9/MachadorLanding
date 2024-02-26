@@ -4,24 +4,24 @@ import { StickyScroll } from "../ui/sticky-scroll-reveal";
 
 const content = [
   {
-    title: "DOCUMENT UPLOADING",
+    title: "Keep Your PDFs Locked Tight",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Machador makes sure your PDF files are super safe, using a strong lock method and a special secret mix for extra protection.",
   },
   {
-    title: "DATABASE VECTORS",
+    title: "Chat Safely Without Worry",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "MessageLock keeps your chats private, using a really strong lock and a unique secret mix so no one else can sneak a peek.",
   },
   {
-    title: "ENCRYPTION OF DATA",
+    title: "Guard Your Conversations and Files",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Machador puts a strong shield around your chats and PDFs, making sure they stay just between you and the intended person.",
   },
   {
-    title: "CHAT WITH YOUR ASSITANTS",
+    title: "Safe Clone for 24/7",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Machador turns your documents and chats into something like a treasure in a safe, locked away with a complex key and an extra layer of security.",
   },
 ];
 export function StickyScrollRevealDemo() {

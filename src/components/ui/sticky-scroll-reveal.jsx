@@ -5,6 +5,8 @@ import { IoDocumentAttachSharp } from "react-icons/io5";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { FaExpeditedssl } from "react-icons/fa";
 import { BiSolidConversation } from "react-icons/bi";
+import Image from 'next/image';
+
 
 export const StickyScroll = ({ content }) => {
   const [activeCard, setActiveCard] = useState(0);
@@ -35,11 +37,15 @@ export const StickyScroll = ({ content }) => {
     "linear-gradient(to top right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom left, var(--cyan-500), var(--emerald-500))",
   ];
-  const icons = [
-    <IoDocumentAttachSharp color="white" size={150} />,
-    <BsDatabaseFillGear color="white" size={150} />,
-    <FaExpeditedssl color="white" size={150} />,
-    <BiSolidConversation color="white" size={150} />,
+  const images = [
+    // <IoDocumentAttachSharp color="white" size={150} />,
+    // <BsDatabaseFillGear color="white" size={150} />,
+    // <FaExpeditedssl color="white" size={150} />,
+    // <BiSolidConversation color="white" size={150} />,
+    "/data.png",
+    "/data1.png",
+    "/data2.png",
+    "/data.png",
   ];
 
   return (
@@ -89,7 +95,15 @@ export const StickyScroll = ({ content }) => {
         className="hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden"
       ></motion.div> */}
       <motion.div className="hidden lg:flex h-60 w-80 justify-center items-center rounded-md sticky top-10 overflow-hidden">
-        {icons[activeCard % icons.length]}
+      {images[activeCard % images.length] && (
+          <Image
+            src={images[activeCard % images.length]}
+            alt="Content Image"
+            width={350} // Set your desired width
+            height={350} // Set your desired height
+            objectFit="cover" // Adjust according to your needs
+          />
+        )}
       </motion.div>
     </motion.div>
   );

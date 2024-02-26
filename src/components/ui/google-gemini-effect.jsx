@@ -205,7 +205,7 @@ export const GoogleGeminiEffect = ({
           height={50}
           x="0" y="340"/>
           <image
-          href="/ico.png"
+          href="/ico4.png"
           width={50}
           height={50}
           x="1390" y="340"/>
@@ -224,7 +224,7 @@ export const GoogleGeminiEffect = ({
           height={50}
           x="0" y="410"/>
            <image
-          href="/ico.png"
+          href="/ico4.png"
           width={50}
           height={50}
           x="1390" y="410"/>
@@ -242,7 +242,7 @@ export const GoogleGeminiEffect = ({
           height={50}
           x="0" y="490"/>
            <image
-          href="/ico.png"
+          href="/ico4.png"
           width={50}
           height={50}
           x="1390" y="490"/>
@@ -260,7 +260,7 @@ export const GoogleGeminiEffect = ({
           height={50}
           x="0" y="560"/>
            <image
-          href="/ico.png"
+          href="/ico4.png"
           width={50}
           height={50}
           x="1390" y="560"/>
@@ -278,7 +278,7 @@ export const GoogleGeminiEffect = ({
           height={50}
           x="0" y="640"/>
            <image
-          href="/ico.png"
+          href="/ico4.png"
           width={50}
           height={50}
           x="1390" y="640"/>
