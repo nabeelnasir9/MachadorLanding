@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 const inter = Inter({ subsets: ["latin"] });
 import Footer from '../components/Footer/Footer';
 import HeaderBanner from '../components/HeaderBanner/HeaderBanner';
+import Loader from "@/components/Loader/Loader";
 
 
 

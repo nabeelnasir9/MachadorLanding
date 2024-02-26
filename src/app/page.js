@@ -42,9 +42,7 @@ export default function Page() {
 
   return (
     <React.Fragment>
-      {loading ? (
-        <Loader />
-      ) : (
+     
       <>
         {/* <Wavy /> */}
         {/* <div className="w-screen h-[100vh] overflow-hidden">
@@ -53,13 +51,13 @@ export default function Page() {
         <HomeIcons />
         <Dashboard />
         <Render />
-        {/* <HowItWorks /> */}
+        <HowItWorks />
         <ContentCards />
         <About />
         <Comparison />
 
 
-        {/* <HeroSection /> */}
+        <HeroSection />
 
         <BentoGridThirdDemo />
 
@@ -78,7 +76,6 @@ export default function Page() {
         <Testimonial />
         <CTA/>
       </>
-      )}
     </React.Fragment>
   );
 }

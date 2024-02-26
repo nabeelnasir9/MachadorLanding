@@ -172,12 +172,18 @@ export default function Header() {
             </div>
             <div className={styles.mobileLang}>
              
-            <button style={{color:"black"}}>Get Started</button>
-          <button style={{color:"black"}}>Login</button>
-              {/* <select value={locale} onChange={handleOnChange}>
-                <option value={"en"}>En</option>
-                <option value={"ar"}>Ar</option>
-              </select> */}
+            <button
+        type="button"
+        className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+      >
+        Get In Touch
+      </button>
+      <button
+        type="button"
+        className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-gray-50 hover:text-black"
+      >
+        Login
+      </button>
             </div>
           </div>
         </div>
@@ -213,9 +219,19 @@ export default function Header() {
           ))}
         </ul>
         <div className={styles.phoneContainer}>
-          <button style={{color:"black"}}>Get Started</button>
-          <button style={{color:"black"}}>Login</button>
-               </div>
+        <button
+        type="button"
+        className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+      >
+        Get In Touch
+      </button>
+      <button
+        type="button"
+        className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-gray-50 hover:text-black"
+      >
+        Login
+      </button>
+                 </div>
       </header>
       
     </div>

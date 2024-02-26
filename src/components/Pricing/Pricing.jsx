@@ -51,7 +51,7 @@ export default function Example() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+          <h2 className="text-base font-semibold leading-7 text-black">Pricing</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Pricing plans for teams of&nbsp;all&nbsp;sizes
           </p>
@@ -60,7 +60,7 @@ export default function Example() {
           Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in.
           Explicabo id ut laborum.
         </p>
-        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
           {tiers.map((tier, tierIdx) => (
             <div
               key={tier.id}
@@ -68,7 +68,7 @@ export default function Example() {
                 tier.mostPopular ? 'lg:z-10 lg:rounded-b-none' : 'lg:mt-8',
                 tierIdx === 0 ? 'lg:rounded-r-none' : '',
                 tierIdx === tiers.length - 1 ? 'lg:rounded-l-none' : '',
-                'flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10'
+                'flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 '
               )}
             >
               <div>

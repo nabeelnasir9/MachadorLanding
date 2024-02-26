@@ -48,17 +48,17 @@ export function ThreeDCardDemo() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === cardsData.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  // const handleNext = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === cardsData.length - 1 ? 0 : prevIndex + 1
+  //   );
+  // };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? cardsData.length - 1 : prevIndex - 1
-    );
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? cardsData.length - 1 : prevIndex - 1
+  //   );
+  // };
 
   return (
     <div className="overflow-hidden">
@@ -122,7 +122,7 @@ export function ThreeDCardDemo() {
         ))}
       </motion.div>
       </AnimatePresence>
-      <button
+      {/* <button
         onClick={handlePrev}
         className="absolute left-0 top-1/2 transform -translate-y-1/2"
       >
@@ -133,7 +133,7 @@ export function ThreeDCardDemo() {
         className="absolute right-0 top-1/2 transform -translate-y-1/2"
       >
         Next
-      </button>
+      </button> */}
     </div>
   );
 }

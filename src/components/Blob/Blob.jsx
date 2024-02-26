@@ -170,7 +170,7 @@ const Scene = () => {
           onPointerOut={() => (hover.current = false)}
           castShadow
         >
-          <icosahedronGeometry args={[2, 35]} />
+          <icosahedronGeometry args={[2, 90]} />
           <meshPhysicalMaterial
             ref={materialRef}
             map={texture}
