@@ -52,19 +52,14 @@ export default function Page() {
           </div> */}
         <Trusties/>
         <HomeIcons />
-
         <Dashboard />
         <Render />
         <HowItWorks />
         <About />
         <ContentCards />
         <Comparison />
-
-
         <HeroSection />
-
         <BentoGridThirdDemo />
-
         <ThreeDCardDemo />
         <GoogleGeminiEffectDemo />
         <StickyScrollRevealDemo />
@@ -76,7 +71,6 @@ export default function Page() {
         <Pricing />
         {/* <BackgroundBeamsDemo /> */}
         <FAQ />
-
         <Testimonial />
         <CTA/>
       </>

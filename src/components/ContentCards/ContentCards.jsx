@@ -5,6 +5,16 @@ import { FaGoogleDrive } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { DiTrello } from "react-icons/di";
 import { SiZapier } from "react-icons/si";
+import { GiFireworkRocket } from "react-icons/gi";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { MdPaid } from "react-icons/md";
+import { FaTasks } from "react-icons/fa";
+import { FaClockRotateLeft } from "react-icons/fa6";
+
+
+
+
+
 
 export function ContentCards() {
   return (
@@ -30,40 +40,40 @@ export function ContentCards() {
 
 export const projects = [
   {
-    title: "Notion",
+    title: "Efficiency Boost",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Machador takes care of repetitive tasks, like answering common questions or scheduling appointments, freeing up your team to focus on the more complex issues. It's like having an extra set of hands helping out with the workload.",
     link: "",
-    icons: <SiNotion size={40} />,
+    icons: <GiFireworkRocket size={40} />,
   },
   {
-    title: "Slack",
+    title: "Data Insights",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "Imagine getting a clearer picture of what your customers want and need. Machador can analyze conversations and interactions, providing valuable insights that can help shape your services or products to better match customer expectations.",
     link: "",
-    icons: <FaSlack size={40} />,
+    icons: <BsGraphUpArrow size={40} />,
   },
   {
-    title: "Google Drive",
+    title: "Cost-Effective",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "For someone starting up, every penny counts. Machador acts as a cost-effective solution, reducing the need for a large customer service team and minimizing expenses on customer engagement tools.",
     link: "",
-    icons: <FaGoogleDrive size={40} />,
+    icons: <MdPaid size={40} />,
   },
   {
-    title: "Gmail",
+    title: "Quick Setup",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "Entrepreneurs often wear many hats and don't have time to waste. Machador is easy to set up and integrate with your existing tools, meaning you can start improving your customer engagement right away without the need for extensive training or technical know-how.",
     link: "",
-    icons: <SiGmail size={40} />,
+    icons: <FaTasks size={40} />,
   },
 
   {
-    title: "Trello",
+    title: "Always On Support",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "Imagine having a team member who never sleeps and is always there to answer questions from your customers, no matter the time of day. Machador can be that team member, offering instant answers and support, which means happier customers and fewer headaches for your team.",
     link: "",
-    icons: <DiTrello size={40} />,
+    icons: <FaClockRotateLeft size={40} />,
   },
   {
     title: "Zapier",

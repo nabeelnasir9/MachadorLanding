@@ -2,10 +2,10 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 
 const tiers = [
   {
-    name: 'Freelancer',
+    name: 'Basic',
     id: 'tier-freelancer',
     href: '#',
-    priceMonthly: '$24',
+    priceMonthly: '$10',
     description: 'The essentials to provide your best work for clients.',
     features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
     mostPopular: false,
@@ -96,7 +96,7 @@ export default function Example() {
                 <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
-                      <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                      <CheckIcon className="h-6 w-5 flex-none text-black-600" aria-hidden="true" />
                       {feature}
                     </li>
                   ))}

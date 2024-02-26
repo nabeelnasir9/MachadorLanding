@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Accordion, AccordionItem } from "@nextui-org/accordion";
-import { motion } from "framer-motion";
+// import { useState } from 'react';
+// import { Accordion, AccordionItem } from "@nextui-org/accordion";
+// import { motion } from "framer-motion";
 
 
 // const faqs = [
@@ -76,89 +76,171 @@ import { motion } from "framer-motion";
 
 // export default HowItWorks;
 
-export default function HowItWorks() {
-const defaultContent =
-"Here is the content of the accordion. You can put any elements here.";
-return (
-<section className="relative max-w-screen-xl mx-auto px-4 py-28 gap-12 md:px-8 flex flex-col justify-center items-center">
-  <motion.div
-    initial={{ y: 5, opacity: 0 }}
-    whileInView={{
-      y: 0,
-      opacity: 1,
-    }}
-    viewport={{ once: true }}
-    transition={{ duration: 1, delay: 0.5 }}
-    className="flex flex-col gap-3 justify-center items-center"
-  >
-    <h4 className="text-2xl font-bold sm:text-3xl bg-gradient-to-b from-foreground to-foreground/70 text-black bg-clip-text">
-      FAQ
-    </h4>
-    <p className="max-w-xl text-black text-center">
-      Here are some of our frequently asked questions. If you have any other
-      questions you’d like answered please feel free to email us.
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: 5, opacity: 0 }}
-    whileInView={{
-      y: 0,
-      opacity: 1,
-    }}
-    viewport={{ once: true }}
-    transition={{ duration: 1, delay: 1 }}
-    className="max-w-2xl w-full border border-foreground/50 rounded-md p-1 text-black text-left"
-  >
-    <Accordion
-      motionProps={{
-        variants: {
-          enter: {
-            y: 0,
-            opacity: 1,
-            height: "auto",
-            transition: {
-              height: {
-                type: "spring",
-                stiffness: 500,
-                damping: 30,
-                duration: 1,
-              },
-              opacity: {
-                easings: "ease",
-                duration: 1,
-              },
-            },
-          },
-          exit: {
-            y: -10,
-            opacity: 0,
-            height: 0,
-            transition: {
-              height: {
-                easings: "ease",
-                duration: 0.25,
-              },
-              opacity: {
-                easings: "ease",
-                duration: 0.3,
-              },
-            },
-          },
-        },
-      }}
-    >
-      <AccordionItem key="1" aria-label="Hello Nabeel?" title="Hello Nabeel?" className="text-left">
-        {defaultContent}
-      </AccordionItem>
-      <AccordionItem key="2" aria-label="¿Why NextUI?" title="¿Why NextUI?" className="text-left">
-        {defaultContent}
-      </AccordionItem>
-      <AccordionItem key="3" aria-label="¿Why NextUI?" title="¿Why NextUI?" className="text-left">
-        {defaultContent}
-      </AccordionItem>
-    </Accordion>
-  </motion.div>
-  <div className="absolute w-40 h-40 border bg-light -left-28 top-0 blur-[200px]"></div>
-</section>
-);
-    }
+// export default function HowItWorks() {
+// const defaultContent =
+// "Here is the content of the accordion. You can put any elements here.";
+// return (
+// <section className="relative max-w-screen-xl mx-auto px-4 py-28 gap-12 md:px-8 flex flex-col justify-center items-center">
+//   <motion.div
+//     initial={{ y: 5, opacity: 0 }}
+//     whileInView={{
+//       y: 0,
+//       opacity: 1,
+//     }}
+//     viewport={{ once: true }}
+//     transition={{ duration: 1, delay: 0.5 }}
+//     className="flex flex-col gap-3 justify-center items-center"
+//   >
+//     <h4 className="text-2xl font-bold sm:text-3xl bg-gradient-to-b from-foreground to-foreground/70 text-black bg-clip-text">
+//       FAQ
+//     </h4>
+//     <p className="max-w-xl text-black text-center">
+//       Here are some of our frequently asked questions. If you have any other
+//       questions you’d like answered please feel free to email us.
+//     </p>
+//   </motion.div>
+//   <motion.div
+//     initial={{ y: 5, opacity: 0 }}
+//     whileInView={{
+//       y: 0,
+//       opacity: 1,
+//     }}
+//     viewport={{ once: true }}
+//     transition={{ duration: 1, delay: 1 }}
+//     className="max-w-2xl w-full border border-foreground/50 rounded-md p-1 text-black text-left"
+//   >
+//     <Accordion
+//       motionProps={{
+//         variants: {
+//           enter: {
+//             y: 0,
+//             opacity: 1,
+//             height: "auto",
+//             transition: {
+//               height: {
+//                 type: "spring",
+//                 stiffness: 500,
+//                 damping: 30,
+//                 duration: 1,
+//               },
+//               opacity: {
+//                 easings: "ease",
+//                 duration: 1,
+//               },
+//             },
+//           },
+//           exit: {
+//             y: -10,
+//             opacity: 0,
+//             height: 0,
+//             transition: {
+//               height: {
+//                 easings: "ease",
+//                 duration: 0.25,
+//               },
+//               opacity: {
+//                 easings: "ease",
+//                 duration: 0.3,
+//               },
+//             },
+//           },
+//         },
+//       }}
+//     >
+//       <AccordionItem key="1" aria-label="Hello Nabeel?" title="Hello Nabeel?" className="text-left">
+//         {defaultContent}
+//       </AccordionItem>
+//       <AccordionItem key="2" aria-label="¿Why NextUI?" title="¿Why NextUI?" className="text-left">
+//         {defaultContent}
+//       </AccordionItem>
+//       <AccordionItem key="3" aria-label="¿Why NextUI?" title="¿Why NextUI?" className="text-left">
+//         {defaultContent}
+//       </AccordionItem>
+//     </Accordion>
+//   </motion.div>
+//   <div className="absolute w-40 h-40 border bg-light -left-28 top-0 blur-[200px]"></div>
+// </section>
+// );
+//     }
+
+
+
+import { motion } from 'framer-motion'
+import { Disclosure } from '@headlessui/react'
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+
+const faqs = [
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  // More questions...
+]
+
+export default function Howit() {
+  return (
+    <div className="bg-white">
+    <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+      <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+        <h2 className="text-5xl font-bold leading-10 tracking-tight text-gray-900 text-center">Frequently asked questions</h2>
+        <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+          {faqs.map((faq) => (
+            <Disclosure as="div" key={faq.question} className="pt-6">
+              {({ open }) => (
+                <>
+                  <dt>
+                    <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                      <span className="text-base font-semibold leading-7">{faq.question}</span>
+                      <span className="ml-6 flex h-7 items-center">
+                        {open ? (
+                          <MinusSmallIcon className="h-6 w-6" aria-hidden="true" />
+                        ) : (
+                          <PlusSmallIcon className="h-6 w-6" aria-hidden="true" />
+                        )}
+                      </span>
+                    </Disclosure.Button>
+                  </dt>
+                  <motion.div
+                    initial={{ y: 5, opacity: 0 }}
+                         whileInView={{
+                           y: 0,
+                           opacity: 1,
+                         }}
+                         viewport={{ once: true }}
+                         transition={{ duration: 1, delay: 1 }}
+                  >
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-gray-600">{faq.answer}</p>
+                    </Disclosure.Panel>
+                  </motion.div>
+                </>
+              )}
+            </Disclosure>
+          ))}
+        </dl>
+      </div>
+    </div>
+  </div>
+  )
+}
