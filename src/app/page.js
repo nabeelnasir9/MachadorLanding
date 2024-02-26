@@ -42,9 +42,9 @@ export default function Page() {
 
   return (
     <React.Fragment>
-      {/* {loading ? (
+      {loading ? (
         <Loader />
-      ) : ( */}
+      ) : (
       <>
         {/* <Wavy /> */}
         {/* <div className="w-screen h-[100vh] overflow-hidden">
@@ -78,7 +78,7 @@ export default function Page() {
         <Testimonial />
         <CTA/>
       </>
-      {/* )} */}
+      )}
     </React.Fragment>
   );
 }
