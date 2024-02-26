@@ -58,7 +58,7 @@ export default function Header() {
       subPages: [
         {
           name: "Affiliate Programme",
-          link: "/partner",
+          link: "/Affiliate",
         },
         {
           name: "Become a Partner",

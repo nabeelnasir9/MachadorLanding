@@ -31,6 +31,8 @@ import { AnimatedPinDemo } from "@/components/3dPin/3dPin";
 import FAQ from "@/components/FAQS/FAQS";
 import Render from "../components/Render/Render";
 import CTA from "@/components/CTA/CTA";
+import Trusties from "@/components/Trustes/Trusties";
+
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -44,16 +46,18 @@ export default function Page() {
     <React.Fragment>
      
       <>
-        {/* <Wavy /> */}
+        <Wavy />
         {/* <div className="w-screen h-[100vh] overflow-hidden">
             <Scene />
           </div> */}
+        <Trusties/>
         <HomeIcons />
+
         <Dashboard />
         <Render />
         <HowItWorks />
-        <ContentCards />
         <About />
+        <ContentCards />
         <Comparison />
 
 
@@ -66,7 +70,7 @@ export default function Page() {
         <StickyScrollRevealDemo />
         <CalendlyComponent />
         {/* <ParallaxScrollDemo /> */}
-        <AlanAi />
+        {/* <AlanAi /> */}
         {/* <AnimatedPinDemo/> */}
         {/* <EventVault /> */}
         <Pricing />

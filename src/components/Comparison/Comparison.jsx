@@ -118,8 +118,8 @@ export default function Comparison() {
 
   // Array of comparison points
   const comparisonPoints = [
-    { machador: "Employs cutting-edge encryption for supreme data security.", others: "May rely on standard encryption methods and some of them not used" },
-    { machador: "Utilizes advanced LLM methods for nuanced interactions.", others: "Often use basic AI models, affecting interaction quality and performance." },
+    { machador: "You don't need to be a tech wizard to get Machador up and running. It's designed to be super easy for anyone to set up and start using, no coding required.", others: "With other tools, you might need to know a bit more about technology or even do some coding to get things working. It can be a bit more of a hassle." },
+    { machador: "Machador is like the friend who gets along with everyone. It easily works with lots of different tools and platforms, like Docs, Slack, Notion, and Google Drive, making your life easier.", others: "Other tools might not play as nicely with your favorite apps. Sometimes they work well with one or two things but might leave out others, making it a bit trickier to have everything working together seamlessly." },
     { machador: "Promises up to 80% workload reduction through automation.", others: "Workload reduction varies, with less emphasis on automation." },
     { machador: "A one-stop solution integrating a wide array of tools for businessess.", others: "Requires multiple platforms for a full suite of tools and not reliable prices" },
   ];
