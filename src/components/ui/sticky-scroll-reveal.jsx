@@ -44,7 +44,7 @@ export const StickyScroll = ({ content }) => {
     // <BiSolidConversation color="white" size={150} />,
     "/data.png",
     "/data1.png",
-    "/data2.png",
+    "/data1.png",
     "/data.png",
   ];
 
