@@ -46,28 +46,28 @@ export const projects = [
     description:
       "Machador takes care of repetitive tasks, like answering common questions or scheduling appointments, freeing up your team to focus on the more complex issues. It's like having an extra set of hands helping out with the workload.",
     link: "",
-    icons: <GiFireworkRocket size={40} />,
+    icons: <GiFireworkRocket size={40} color="white" />,
   },
   {
     title: "Data Insights",
     description:
       "Imagine getting a clearer picture of what your customers want and need. Machador can analyze conversations and interactions, providing valuable insights that can help shape your services or products to better match customer expectations.",
     link: "",
-    icons: <VscGraphLine size={40} />,
+    icons: <VscGraphLine size={40} color="white"/>,
   },
   {
     title: "Cost-Effective",
     description:
       "For someone starting up, every penny counts. Machador acts as a cost-effective solution, reducing the need for a large customer service team and minimizing expenses on customer engagement tools.",
     link: "",
-    icons: <MdPaid size={40} />,
+    icons: <MdPaid size={40} color="white"/>,
   },
   {
     title: "Quick Setup",
     description:
       "Entrepreneurs often wear many hats and don't have time to waste. Machador is easy to set up and integrate with your existing tools, meaning you can start improving your customer engagement right away without the need for extensive training or technical know-how.",
     link: "",
-    icons: <FaTasks size={40} />,
+    icons: <FaTasks size={40} color="white"/>,
   },
 
   {
@@ -75,13 +75,13 @@ export const projects = [
     description:
       "As your business grows, Machador grows with you. It can handle an increasing volume of interactions without the need for you to hire more staff, making it easier to scale your operations.",
     link: "",
-    icons: <FaClockRotateLeft size={40} />,
+    icons: <FaClockRotateLeft size={40} color="white" />,
   },
   {
     title: "Scalability",
     description:
       "As your business grows, Machador grows with you. It can handle an increasing volume of interactions without the need for you to hire more staff, making it easier to scale your operations.",
     link: "",
-    icons: <FaArrowTrendUp size={40} />,
+    icons: <FaArrowTrendUp size={40} color="white"/>,
   },
 ];
