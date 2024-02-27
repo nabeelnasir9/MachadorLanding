@@ -86,8 +86,7 @@ export default function PricingPage() {
               Simple pricing, no commitment
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-black">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus
-              molestiae voluptatum quos odit doloribus.
+            Get the right plan for your budget - packed with everything your business needs to grow, plus friendly support to help you along the way.
             </p>
             <div className="mt-16 flex justify-center">
               <RadioGroup
