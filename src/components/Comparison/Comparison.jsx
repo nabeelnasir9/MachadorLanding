@@ -138,6 +138,7 @@ export default function Comparison() {
                        width="1.5em"
                        height="1.5em"
                        viewBox="0 0 24 24"
+                       color="white"
                      >
                        <path
                          fill="currentColor"
@@ -152,7 +153,7 @@ export default function Comparison() {
           </ul>
         </div>
         <div className="machador">
-          <h1>Machador</h1>
+          <h1 className="white">Machador</h1>
           {/* Machador logo SVG */}
         </div>
       </div>
@@ -168,6 +169,7 @@ export default function Comparison() {
                        width="1.5em"
                        height="1.5em"
                        viewBox="0 0 20 20"
+                       color="white"
                      >
                        <path
                          fill="currentColor"
@@ -181,7 +183,7 @@ export default function Comparison() {
           </ul>
         </div>
         <div className="rightSectionLabel">
-          <h1>Others</h1>
+          <h1 className="white">Others</h1>
           
           {/* Other solutions' logo SVG or placeholder */}
         </div>
