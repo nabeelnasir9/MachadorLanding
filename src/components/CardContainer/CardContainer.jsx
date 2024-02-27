@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/utils/cn";
-import React from "react";
+import React, { useEffect } from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
@@ -12,11 +12,18 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export function BentoGridThirdDemo() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
-     <h1 className="text-medium font-semibold text-black dark:text-black mb-4 mt-10 text-center pt-40" style={{ maxWidth: '800px', margin: '0 auto' }}>
+     <h1 className="text-medium font-semibold text-black dark:text-black mb-4 mt-10 text-center pt-40" style={{ maxWidth: '800px', margin: '0 auto' }} data-aos="zoom-out-up">
   SAVE TIME AND MONEY <br />
   <span
     className="text-4xl md:text-4rem] font-bold mt-1 mb-2 leading-none max-w-96 m-0 m-auto"
@@ -34,13 +41,13 @@ export function BentoGridThirdDemo() {
   </span>
 </h1>
 
-      <h1 className="text-md font-medium text-black dark:text-black mb-4 text-center pb-10" style={{ maxWidth: '800px', margin: '0 auto' }}>
+      <h1 className="text-md font-medium text-black dark:text-black mb-4 text-center pb-10" style={{ maxWidth: '800px', margin: '0 auto' }} data-aos="zoom-out-up">
         <span className="text-lg md:text-3rem] font-medium mt-1 mb-2 leading-none max-w-96 m-0 m-auto">
           Experience effortless onboarding and provide round-the-clock
           assistance to your clients, all without the need for coding.
         </span>
       </h1>
-      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[20rem]">
+      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[20rem]" data-aos="zoom-out-up">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}

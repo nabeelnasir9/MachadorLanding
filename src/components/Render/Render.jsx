@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Render.module.css'; 
 import { FaArrowRightLong } from "react-icons/fa6";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const faqs = [
   {
@@ -35,9 +37,13 @@ const HowItWorks = () => {
   const toggleFAQ = (index) => {
     setActiveIndex(index === activeIndex ? null : index); 
   };
-
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-aos="fade-up">
       <h1 className="text-xl font-semibold text-black dark:text-black mb-4">
         How it works <br />
         <span className="text-2xl md:text-[4rem] font-bold mt-1 mb-2 leading-none" style={{

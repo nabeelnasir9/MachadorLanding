@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -13,7 +14,9 @@ import {
 import { SiChatbot } from "react-icons/si";
 import { GiPlatform } from "react-icons/gi";
 import { FaCode } from "react-icons/fa";
-import { ArrowTopRightOnSquareIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
+import { ArrowTopRightOnSquareIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 const HowItWorks = () => {
@@ -50,10 +53,14 @@ const HowItWorks = () => {
       icon: ServerIcon,
     },
   ]
-  
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
 
   return (
-<div className="relative bg-white py-16 sm:py-24 lg:py-32">
+<div className="relative bg-white py-16 sm:py-24 lg:py-32" data-aos="fade-up">
             <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
               <h2 className="text-lg font-semibold text-cyan-600">Perks Of Using Machador</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

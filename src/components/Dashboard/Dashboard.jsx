@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ContainerScroll } from "../ui/container-scroll-animation";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export function Dashboard() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden" data-aos="fade-up">
       <ContainerScroll
         users={users}
         titleComponent={

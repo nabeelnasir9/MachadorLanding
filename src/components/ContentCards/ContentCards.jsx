@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { HoverEffect } from "../ui/convert-hover-effect";
 import { SiNotion } from "react-icons/si";
 import { FaSlack } from "react-icons/fa";
@@ -11,16 +12,13 @@ import { MdPaid } from "react-icons/md";
 import { FaTasks } from "react-icons/fa";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { FaArrowTrendUp } from "react-icons/fa6";
-
-
-
-
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 export function ContentCards() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto px-8" data-aos="fade-up">
       <h1 className="text-3xl font-semibold text-black dark:text-black mb-4 text-center mt-10 pt-20">
         How Machador is <br />
       </h1>

@@ -88,11 +88,13 @@
 //   );
 // }
 
-
+import React, { useEffect } from "react";
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
 import { FaStairs } from "react-icons/fa6";
 import { VscRunAll } from "react-icons/vsc";
 import { PiPlugsConnectedBold } from "react-icons/pi";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 import "./Abouts.css";
@@ -118,8 +120,13 @@ const features = [
 ]
 
 export default function About() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-white py-24 sm:py-32" data-aos="fade-up">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
           <div className="lg:pr-8 lg:pt-4">

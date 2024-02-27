@@ -1,3 +1,7 @@
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const stats = [
     { id: 1, name: 'Companies On Boarded', value: '50+' },
     { id: 2, name: 'Security Of Your Data', value: '100%' },
@@ -6,8 +10,13 @@ const stats = [
   ]
   
   export default function Trusties() {
+    useEffect(() => {
+      Aos.init({
+        duration: 1000,
+      });
+    }, []);
     return (
-      <div className="bg-white py-10">
+      <div className="bg-white py-10" data-aos="fade-up">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
