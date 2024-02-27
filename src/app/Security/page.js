@@ -20,9 +20,9 @@ const security = () => {
   ]
   
   const stats = [
-      { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-      { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-      { id: 3, name: 'New users annually', value: '46,000' },
+      { id: 1, value: 'GDPR and CCPA', name: '(Global Compliance regulations)' },
+      { id: 2, value: 'End-to-End Encryption', name: ' (SHA-256 and TLS)' },
+      { id: 3, value: '24/7 Monitoring', name: '(Security operation)' },
     ]
   return (
     <div className="introductionMainContainer" data-aos="fade-up">
@@ -74,17 +74,15 @@ const security = () => {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people connect.
+                  Secure Onboarding with Machador
                   </h1>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
-                    labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
-                    mollit id pariatur in voluptate cillum.
+                  At Machador, we redefine team onboarding with an unwavering commitment to security and privacy. Our intelligent AI chatbot solution is built on a foundation of advanced encryption and compliance standards, ensuring your data remains protected, every step of the way.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="#"
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Get started
                     </a>
@@ -165,25 +163,24 @@ const security = () => {
     </div>
 
 {/* Section added for Security parts */}
-      <section className="bg-black text-white">
+      <section className="bg-white text-black">
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div className="mx-auto max-w-lg text-center">
-      <h2 className="text-3xl font-bold sm:text-4xl">Kickstart your marketing</h2>
+      <h2 className="text-3xl font-bold sm:text-4xl">Comprehensive Security</h2>
 
-      <p className="mt-4 text-gray-300">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquam doloribus
-        nesciunt eos fugiat. Vitae aperiam fugit consequuntur saepe laborum.
+      <p className="mt-4 text-black-300">
+      Dive deeper into the layers of security that protect your data within the Machador ecosystem. Adherence to global privacy regulations protects your data across borders.
       </p>
     </div>
 
     <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 no-underline"
         href="#"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-pink-500"
+          className="size-10 text-black-500"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -200,21 +197,20 @@ const security = () => {
           />
         </svg>
 
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 className="mt-4 text-xl font-bold text-black no-underline">Robust Technical Infrastructure</h2>
 
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p className="mt-1 text-sm text-black no-underline">
+        Leveraging Node.js, VectorDB, and MongoDB for fast, responsive, and secure data handling, underpinned by OAuth2 authentication and SHA-256 encryption.
         </p>
       </a>
 
       <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 no-underline"
         href="#"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-pink-500"
+          className="size-10 text-black"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -231,21 +227,20 @@ const security = () => {
           />
         </svg>
 
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 className="mt-4 text-xl font-bold text-black">Server Security & Compliance</h2>
 
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p className="mt-1 text-sm text-black">
+        Our EU-based servers comply with GDPR mandates, featuring rigorous security audits and compliance checks with hosting services to ensure the highest standards of data protection.
         </p>
       </a>
 
       <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 no-underline"
         href="#"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-pink-500"
+          className="size-10 text-black"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -262,21 +257,20 @@ const security = () => {
           />
         </svg>
 
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 className="mt-4 text-xl font-bold text-black">GDPR Compliance Strategy</h2>
 
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p className="mt-1 text-sm text-black">
+        A dynamic GDPR checklist guides our operations, focusing on user-controlled data deletion capabilities and strict data processing documentation, for uncompromised privacy.
         </p>
       </a>
 
       <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 no-underline"
         href="#"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-pink-500"
+          className="size-10 text-black"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -293,21 +287,20 @@ const security = () => {
           />
         </svg>
 
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 className="mt-4 text-xl font-bold text-black">Advanced API Security</h2>
 
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p className="mt-1 text-sm text-black">
+        Our APIs employ documented encryption and authentication, fortified by TLS protocols, to secure data exchange and maintain integrity across all interactions.
         </p>
       </a>
 
       <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 no-underline"
         href="#"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-pink-500"
+          className="size-10 text-black"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -324,21 +317,20 @@ const security = () => {
           />
         </svg>
 
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 className="mt-4 text-xl font-bold text-black">Proactive Incident Management</h2>
 
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p className="mt-1 text-sm text-gray-black">
+        Our structured notification and mitigation strategy enables swift incident response, supported by a team of cybersecurity experts dedicated to maintaining operational resilience.
         </p>
       </a>
 
       <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 no-underline"
         href="#"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-pink-500"
+          className="size-10 text-black"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -355,11 +347,10 @@ const security = () => {
           />
         </svg>
 
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 className="mt-4 text-xl font-bold text-black">Continuous Improvement & Monitoring</h2>
 
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p className="mt-1 text-sm text-black">
+        Ongoing monitoring systems evaluate the effectiveness of our security measures, ensuring continuous improvement and adaptation to evolving threats and compliance standards.
         </p>
       </a>
     </div>
@@ -367,9 +358,9 @@ const security = () => {
     <div className="mt-12 text-center">
       <a
         href="#"
-        className="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        className="inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400 no-underline"
       >
-        Get Started Today
+        Try Now
       </a>
     </div>
   </div>
