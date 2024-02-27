@@ -19,9 +19,6 @@
 
 body {
   color: var(--foreground-rgb);
-  /* background-image:
-  radial-gradient(at 37% 47%, hsla(194,86%,43%,1) 0px, transparent 50%),
-  radial-gradient(at 62% 84%, hsla(172,100%,41%,1) 0px, transparent 50%); */
   background-color: #fff;
   font-family: "Montserrat", sans-serif !important;
 

@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const stats = [
-    { id: 1, name: 'Companies On Boarded', value: '50+' },
+    { id: 1, name: 'Companies On Boarded', value: '100+' },
     { id: 2, name: 'Security Of Your Data', value: '100%' },
     { id: 3, name: 'Guaranteed Results', value: '99.9%' },
     { id: 4, name: 'Reduce Time & Improve Productivity', value: '100%' },
@@ -21,7 +21,7 @@ const stats = [
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Trusted by 50+ companies worldwide
+                Trusted by 100+ companies worldwide
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-600">
                 We are the emerging pinoeers in worldwide. Here is how!
