@@ -44,7 +44,7 @@ export const StickyScroll = ({ content }) => {
     // <BiSolidConversation color="white" size={150} />,
     "/data.png",
     "/data1.png",
-    "/data1.png",
+    "/data3.png",
     "/data.png",
   ];
 
@@ -94,13 +94,13 @@ export const StickyScroll = ({ content }) => {
         }}
         className="hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden"
       ></motion.div> */}
-      <motion.div className="hidden lg:flex h-60 w-80 justify-center items-center rounded-md sticky top-10 overflow-hidden">
+      <motion.div className="hidden lg:flex h-80 w-[30rem] justify-center items-center rounded-md sticky top-10 overflow-hidden">
       {images[activeCard % images.length] && (
           <Image
             src={images[activeCard % images.length]}
             alt="Content Image"
-            width={350} // Set your desired width
-            height={350} // Set your desired height
+            width={450} // Set your desired width
+            height={450} // Set your desired height
             objectFit="cover" // Adjust according to your needs
           />
         )}

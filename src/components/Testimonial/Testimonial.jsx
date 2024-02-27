@@ -1,8 +1,8 @@
 const featuredTestimonial = {
-    body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+    body: 'Before Machador, our onboarding process was cumbersome and time-consuming. Machador is AI-driven approach has revolutionized how we welcome new team members, significantly reducing manual tasks and allowing us to focus on creating meaningful first experiences. It is a game-changer for our HR department.',
     author: {
-      name: 'Brenna Goyette',
-      handle: 'brennagoyette',
+      name: 'Jessica R.',
+      handle: 'Jessicar',
       imageUrl:
         'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
       logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
@@ -12,10 +12,10 @@ const featuredTestimonial = {
     [
       [
         {
-          body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+          body: 'Implementing Machador into our existing systems was incredibly smooth, and we saw immediate improvements in our onboarding efficiency. The AI is ability to personalize the process for each new hire is remarkable, ensuring they feel valued and informed from day one.',
           author: {
-            name: 'Leslie Alexander',
-            handle: 'lesliealexander',
+            name: 'Marry T.',
+            handle: 'marrykt',
             imageUrl:
               'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
           },
@@ -24,7 +24,7 @@ const featuredTestimonial = {
       ],
       [
         {
-          body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+          body: 'As a rapidly growing startup, we needed an onboarding solution that could scale with us. Machador has not only met but exceeded our expectations. Its AI-driven insights have helped us refine our onboarding strategy, making it a seamless experience for everyone involved.',
           author: {
             name: 'Lindsay Walton',
             handle: 'lindsaywalton',
@@ -38,7 +38,7 @@ const featuredTestimonial = {
     [
       [
         {
-          body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+          body: 'Since we started using Machador, we have noticed a significant uptick in new hire engagement and retention rates. The platform is intuitive design and personalized onboarding paths make employees feel supported and connected from the start. Machador has been instrumental in building our company culture.',
           author: {
             name: 'Tom Cook',
             handle: 'tomcook',
@@ -50,7 +50,7 @@ const featuredTestimonial = {
       ],
       [
         {
-          body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+          body: 'Machador is at the forefront of AI onboarding technology, yet it is incredibly user-friendly. Our team was able to get up to speed quickly, and the AI is recommendations have been spot on. It is rare to find a tool that is both powerful and easy to use.',
           author: {
             name: 'Leonard Krasner',
             handle: 'leonardkrasner',

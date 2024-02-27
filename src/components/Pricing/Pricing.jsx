@@ -57,8 +57,7 @@ export default function Example() {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-          Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in.
-          Explicabo id ut laborum.
+        Get the right plan for your budget - packed with everything your business needs to grow, plus friendly support to help you along the way.
         </p>
         <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
           {tiers.map((tier, tierIdx) => (

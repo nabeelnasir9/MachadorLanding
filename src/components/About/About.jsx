@@ -90,6 +90,11 @@
 
 
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+import { FaStairs } from "react-icons/fa6";
+import { VscRunAll } from "react-icons/vsc";
+import { PiPlugsConnectedBold } from "react-icons/pi";
+
+
 import "./Abouts.css";
 
 
@@ -98,17 +103,17 @@ const features = [
     name: 'Make Working Together Easy:',
     description:
       'Whether you are sharing ideas on Notion, chatting in Slack, or sharing files in Google Drive, this helper makes everything run smoother. It is like your work buddy, always there to lend a hand.',
-    icon: CloudArrowUpIcon,
+    icon: FaStairs,
   },
   {
     name: 'Get Stuff Done Faster, Everywhere:',
     description: 'Think of a super assistant that knows just how to work with all the apps you love—Docs for writing, Google Drive for keeping files, and even Slack for talking to your team.',
-    icon: LockClosedIcon,
+    icon: VscRunAll,
   },
   {
     name: 'Connect, Create, and Collaborate - Effortlessly:',
     description: 'With an assistant that effortlessly integrates with platforms like Docs for creation, Notion for organization, Slack for communication, and Google Drive for storage, your ability to create and collaborate is unlimited. Streamline your work and bring your best ideas to life, effortlessly.',
-    icon: ServerIcon,
+    icon: PiPlugsConnectedBold,
   },
 ]
 
@@ -131,7 +136,7 @@ export default function About() {
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
+                  <div key={feature.name} className="relative pl-9 text-justify">
                     <dt className="inline font-semibold text-gray-900 text-justify">
                       <feature.icon className="absolute left-1 top-1 h-5 w-5 text-black" aria-hidden="true" />
                       {feature.name}
@@ -144,7 +149,7 @@ export default function About() {
           </div>
           <div className="atomContainer">
           <span className="nucleus">
-            Explore <span>Our Tools,</span> That We Use
+            Tools <span>You can</span> Integrate with Machador
           </span>
           <div className="orbit orbit1" />
           <div className="orbit orbit2" />

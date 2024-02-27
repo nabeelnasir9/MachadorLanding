@@ -45,7 +45,7 @@ const HowItWorks = () => {
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}>
-          Have your partner in minutes!
+          Have your clone in minutes!
         </span>
       </h1>
       <div className={styles.content}>

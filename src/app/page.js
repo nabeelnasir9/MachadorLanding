@@ -21,7 +21,7 @@ import { BentoGridThirdDemo } from "@/components/CardContainer/CardContainer";
 import Footer from "@/components/Footer/Footer";
 import { StickyScrollRevealDemo } from "@/components/Scroll/Scroll";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
-import { ThreeDCardDemo } from "@/components/3dcard/3dcard";
+// import { ThreeDCardDemo } from "@/components/3dcard/3dcard";
 import HomeIcons from "../components/HomeIcons/HomeIcons";
 import CalendlyComponent from "@/components/Calendly/CalendlyComponent";
 import { ParallaxScrollDemo } from "@/components/paralleax/paralleax";
@@ -33,6 +33,7 @@ import Render from "../components/Render/Render";
 import CTA from "@/components/CTA/CTA";
 import Trusties from "@/components/Trustes/Trusties";
 import Ourteams from "@/components/OurTeam/OurTeam";
+import ThreeD from "@/components/3dcard/3dcard";
 
 
 export default function Page() {
@@ -61,7 +62,7 @@ export default function Page() {
         <Comparison />
         <HeroSection />
         <BentoGridThirdDemo />
-        <ThreeDCardDemo />
+        {/* <ThreeD /> */}
         <GoogleGeminiEffectDemo />
         <StickyScrollRevealDemo />
         <CalendlyComponent />

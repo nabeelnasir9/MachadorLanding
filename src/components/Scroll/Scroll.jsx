@@ -11,7 +11,7 @@ const content = [
   {
     title: "Chat Safely Without Worry",
     description:
-      "MessageLock keeps your chats private, using a really strong lock and a unique secret mix so no one else can sneak a peek.",
+      "MessageLock keeps your chats private, using a really strong lock and a unique secret mix so no one else can sneak a peek. Machador turns your documents and chats into something like a treasure in a safe, locked away with a complex key and an extra layer of security.",
   },
   {
     title: "Guard Your Conversations and Files",
