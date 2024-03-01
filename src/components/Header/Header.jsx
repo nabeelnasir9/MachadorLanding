@@ -171,16 +171,17 @@ export default function Header() {
               </ul>
             </div>
             <div className={styles.mobileLang}>
-             
+             <Link href="/Contact">
             <button
         type="button"
         className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
       >
         Get In Touch
       </button>
+      </Link>
       <button
         type="button"
-        className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-gray-50 hover:text-black"
+        className="rounded-full bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-gray-50 hover:text-black"
       >
         Login
       </button>
@@ -219,15 +220,17 @@ export default function Header() {
           ))}
         </ul>
         <div className={styles.phoneContainer}>
+        <Link href="/Contact">
         <button
         type="button"
-        className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+        className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-cyan-500 shadow-sm ring-1 ring-inset ring-cyan-500 hover:bg-gray-50"
       >
         Get In Touch
       </button>
+      </Link>
       <button
         type="button"
-        className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-gray-50 hover:text-black"
+        className="rounded-full bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-white hover:text-white"
       >
         Login
       </button>

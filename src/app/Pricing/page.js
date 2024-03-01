@@ -9,66 +9,69 @@ const frequencies = [
 ]
 const tiers = [
   {
-    name: 'Starter',
+    name: 'Basic',
     id: 'tier-starter',
     href: '#',
     featured: false,
-    description: 'All your essential business finances, taken care of.',
-    price: { monthly: '$15', annually: '$144' },
-    mainFeatures: ['Basic invoicing', 'Easy to use accounting', 'Mutli-accounts'],
+    description: 'A plan that scales with your rapidly growing business.',
+    price: { monthly: '€8.99', annually: '€99' },
+    mainFeatures: ['Customized chatbot for company onboarding system', 'Essential features and functionalities', 'Email support', 'Suitable for small businesses or startups with minimal onboarding needs or low hiring volumes','20k tokens per month'],
   },
   {
-    name: 'Scale',
+    name: 'Standard',
     id: 'tier-scale',
     href: '#',
     featured: true,
-    description: 'The best financial services for your thriving business.',
-    price: { monthly: '$60', annually: '$576' },
+    description: 'A plan that scales with your rapidly growing business.',
+    price: { monthly: '€15.99', annually: '€176' },
     mainFeatures: [
-      'Advanced invoicing',
-      'Easy to use accounting',
-      'Mutli-accounts',
-      'Tax planning toolkit',
-      'VAT & VATMOSS filing',
-      'Free bank transfers',
+      'Customized chatbot for company onboarding system',
+      'Additional features such as analytics, reporting, and integration options',
+      'Priority email support',
+      'Suitable for medium-sized businesses with moderate onboarding requirements and average hiring volumes',
+      '50k tokens per month',
     ],
   },
   {
-    name: 'Growth',
+    name: 'Premium',
     id: 'tier-growth',
     href: '#',
     featured: false,
     description: 'Convenient features to take your business to the next level.',
-    price: { monthly: '$30', annually: '$288' },
-    mainFeatures: ['Basic invoicing', 'Easy to use accounting', 'Mutli-accounts', 'Tax planning toolkit'],
+    price: { monthly: '€29.99', annually: '€290' },
+    mainFeatures: ['Highly customized chatbot tailored to specific client needs',
+    'Advanced features like AI-driven decision-making, multi-platform integration, and advanced analytics',
+    'Priority email and phone support',
+    'Regular performance reviews and optimizations',
+    '100k tokens per month',],
   },
 ]
 const sections = [
   {
     name: 'Catered for business',
     features: [
-      { name: 'Tax Savings', tiers: { Starter: true, Scale: true, Growth: true } },
-      { name: 'Easy to use accounting', tiers: { Starter: true, Scale: true, Growth: true } },
-      { name: 'Multi-accounts', tiers: { Starter: '3 accounts', Scale: 'Unlimited accounts', Growth: '7 accounts' } },
-      { name: 'Invoicing', tiers: { Starter: '3 invoices', Scale: 'Unlimited invoices', Growth: '10 invoices' } },
-      { name: 'Exclusive offers', tiers: { Starter: false, Scale: true, Growth: true } },
-      { name: '6 months free advisor', tiers: { Starter: false, Scale: true, Growth: true } },
-      { name: 'Mobile and web access', tiers: { Starter: false, Scale: true, Growth: false } },
+      { name: 'Basic Support', tiers: { Basic: true, Standard: true, Premium: true } },
+      { name: 'Analytics Dashboard', tiers: { Basic: false, Standard: true, Premium: true } },
+      { name: 'Integration Options', tiers: { Basic: false, Standard: true, Premium: true } },
+      { name: 'Custom Onboarding', tiers: { Basic: false, Standard: false, Premium: true } },
+      { name: 'Priority Support', tiers: { Basic: false, Standard: false, Premium: true } },
+      { name: 'Advanced Analytics', tiers: { Basic: false, Standard: false, Premium: true } },
+      { name: 'AI-driven Decision Making', tiers: { Basic: false, Standard: false, Premium: true } },
     ],
   },
   {
     name: 'Other perks',
     features: [
-      { name: '24/7 customer support', tiers: { Starter: true, Scale: true, Growth: true } },
-      { name: 'Instant notifications', tiers: { Starter: true, Scale: true, Growth: true } },
-      { name: 'Budgeting tools', tiers: { Starter: true, Scale: true, Growth: true } },
-      { name: 'Digital receipts', tiers: { Starter: true, Scale: true, Growth: true } },
-      { name: 'Pots to separate money', tiers: { Starter: false, Scale: true, Growth: true } },
-      { name: 'Free bank transfers', tiers: { Starter: false, Scale: true, Growth: false } },
-      { name: 'Business debit card', tiers: { Starter: false, Scale: true, Growth: false } },
+      { name: 'Email Support', tiers: { Basic: true, Standard: true, Premium: true } },
+      { name: 'Phone Support', tiers: { Basic: false, Standard: true, Premium: true } },
+      { name: 'Monthly Performance Reviews', tiers: { Basic: false, Standard: false, Premium: true } },
+      { name: 'Dedicated Account Manager', tiers: { Basic: false, Standard: false, Premium: true } },
+      { name: 'Multi-platform Integration', tiers: { Basic: false, Standard: false, Premium: true } },
+      { name: 'Custom Feature Development', tiers: { Basic: false, Standard: true, Premium: true } },
+      { name: 'Unlimited Tokens', tiers: { Basic: false, Standard: true, Premium: true } },
     ],
   },
-]
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -92,7 +95,7 @@ export default function PricingPage() {
               <RadioGroup
                 value={frequency}
                 onChange={setFrequency}
-                className="grid grid-cols-2 gap-x-1 rounded-full bg-[#0ED0B5] p-1 text-center text-xs font-semibold leading-5 text-white"
+                className="grid grid-cols-2 gap-x-1 rounded-full bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] p-1 text-center text-xs font-semibold leading-5 text-white"
               >
                 <RadioGroup.Label className="sr-only">Payment frequency</RadioGroup.Label>
                 {frequencies.map((option) => (
@@ -100,7 +103,7 @@ export default function PricingPage() {
                     key={option.value}
                     value={option}
                     className={({ checked }) =>
-                      classNames(checked ? 'bg-[#0ED0B5]' : '', 'cursor-pointer rounded-full px-2.5 py-1')
+                      classNames(checked ? 'bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)]' : '', 'cursor-pointer rounded-full px-2.5 py-1')
                     }
                   >
                     <span>{option.label}</span>
@@ -158,7 +161,7 @@ export default function PricingPage() {
                         {tier.price[frequency.value]}
                       </p>
                       <div className="text-sm leading-5">
-                        <p className={tier.featured ? 'text-gray-900' : 'text-white'}>USD</p>
+                        <p className={tier.featured ? 'text-gray-900' : 'text-white'}>EURO</p>
                         <p
                           className={tier.featured ? 'text-gray-500' : 'text-gray-400'}
                         >{`Billed ${frequency.value}`}</p>
@@ -169,7 +172,7 @@ export default function PricingPage() {
                       aria-describedby={tier.id}
                       className={classNames(
                         tier.featured
-                          ? 'bg-[#0ED0B5] shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600'
+                          ? 'bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600'
                           : 'bg-white/10 hover:bg-white/20 focus-visible:outline-white',
                         'rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                       )}

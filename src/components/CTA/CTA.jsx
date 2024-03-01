@@ -6,7 +6,7 @@ export default function CTA() {
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Want to Boost Your Productivity?
             <br />
-            Start Using Machador,
+            Start Using Machador
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-white">
           Ready to transform your onboarding experience? Click here to unleash the power of AI, streamline your process, and ensure your customers receive instant, 24/7 support. No coding needed. Start saving time and money today!
