@@ -19,8 +19,10 @@ export const StickyScroll = ({ content }) => {
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
+    console.log("Breakpoints:", cardsBreakpoints);
     cardsBreakpoints.forEach((breakpoint, index) => {
       if (latest > breakpoint - 0.2 && latest <= breakpoint) {
+        console.log("Activating card:", index); // Debug activation
         setActiveCard(() => index);
       }
     });
@@ -54,11 +56,11 @@ export const StickyScroll = ({ content }) => {
         background: linearGradients[activeCard % linearGradients.length],
         transition: "ease-in-out duration-1000",
       }}
-      className="h-[40rem] overflow-y-auto flex justify-around relative space-x-10 rounded-md p-10"
+      className="h-[40rem] overflow-y-auto flex justify-evenly relative space-x-10 rounded-md p-10"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
-        <div className="max-w-2xl">
+        <div className="max-w-[20rem]">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2

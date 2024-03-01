@@ -25,6 +25,13 @@ body {
 
 }
 
+html {
+  color: var(--foreground-rgb);
+  font-family: "Montserrat", sans-serif !important;
+
+
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

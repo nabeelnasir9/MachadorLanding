@@ -87,11 +87,11 @@ const security = () => {
                     <div className="mt-10 flex items-center gap-x-6">
                       <a
                         href="#"
-                        className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="rounded-md bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
                         Get started
                       </a>
-                      <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                      <a href="#" className="text-sm font-semibold leading-6 text-cyan-500">
                         Live demo <span aria-hidden="true">→</span>
                       </a>
                     </div>
@@ -266,7 +266,7 @@ const security = () => {
           <div className="mt-12 text-center">
             <a
               href="#"
-              className="inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-cyan-700 focus:outline-none focus:ring focus:ring-yellow-400 no-underline"
+              className="inline-block rounded-xl bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-12 py-3 text-sm font-medium text-white transition hover:bg-cyan-700 focus:outline-none focus:ring focus:ring-yellow-400 no-underline"
             >
               Try Now
             </a>
@@ -274,7 +274,7 @@ const security = () => {
         </div>
       </section>
       {/* Truties and Proves */}
-      <AlanAi />
+      {/* <AlanAi /> */}
 
       <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8 ">

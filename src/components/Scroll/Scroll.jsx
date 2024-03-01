@@ -18,11 +18,11 @@ const content = [
     description:
       "Machador puts a strong shield around your chats and PDFs, making sure they stay just between you and the intended person.",
   },
-  {
-    title: "Safe Clone for 24/7",
-    description:
-      "Machador turns your documents and chats into something like a treasure in a safe, locked away with a complex key and an extra layer of security.",
-  },
+  // {
+  //   title: "Safe Clone for 24/7",
+  //   description:
+  //     "Machador turns your documents and chats into something like a treasure in a safe, locked away with a complex key and an extra layer of security.",
+  // },
 ];
 export function StickyScrollRevealDemo() {
   return (
