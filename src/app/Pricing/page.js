@@ -11,7 +11,7 @@ const tiers = [
   {
     name: 'Basic',
     id: 'tier-starter',
-    href: '#',
+    href: 'https://machador-fe.vercel.app/login',
     featured: false,
     description: 'A plan that scales with your rapidly growing business.',
     price: { monthly: '€8.99', annually: '€99' },
@@ -20,7 +20,7 @@ const tiers = [
   {
     name: 'Standard',
     id: 'tier-scale',
-    href: '#',
+    href: 'https://machador-fe.vercel.app/login',
     featured: true,
     description: 'A plan that scales with your rapidly growing business.',
     price: { monthly: '€15.99', annually: '€176' },
@@ -35,7 +35,7 @@ const tiers = [
   {
     name: 'Premium',
     id: 'tier-growth',
-    href: '#',
+    href: 'https://machador-fe.vercel.app/login',
     featured: false,
     description: 'Convenient features to take your business to the next level.',
     price: { monthly: '€29.99', annually: '€290' },
