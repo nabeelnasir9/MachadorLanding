@@ -13,34 +13,34 @@ export default function Header() {
    
     {
       name: "Enterprise",
-      link: "/Enterprise",
+      link: "/",
       subPages: [
         {
           name: "Customized Solutions",
-          link: "/Enterprise",
+          link: "/",
         },
         {
           name: "Data Privacy & Security",
-          link: "/Enterprise",
+          link: "/",
         },
         {
           name: "Training & Support",
-          link: "/Enterprise",
+          link: "/",
         },
         {
           name: "Success Stories",
-          link: "/Enterprise",
+          link: "/",
         },
         {
           name: "Contact & Inquiry",
-          link: "/Enterprise",
+          link: "/",
         },
       ],
     },
     
     {
       name: "How it Works",
-      link: "/about",
+      link: "/",
       subPages: [
         {
           name: "Security",
@@ -48,40 +48,40 @@ export default function Header() {
         },
         {
           name: "Features",
-          link: "/API",
+          link: "/",
         },
       ],
     },
     {
       name: "Be a Machador",
-      link: "/partner",
+      link: "/",
       subPages: [
         {
           name: "Affiliate Programme",
-          link: "/Affiliate",
+          link: "/",
         },
         {
           name: "Become a Partner",
-          link: "/partner",
+          link: "/",
         }
       ],
     },
     
     {
       name: "Company",
-      link: "/company",
+      link: "/",
       subPages: [
         {
           name: "History",
-          link: "/company",
+          link: "/",
         },
         {
           name: "Mission",
-          link: "/mission",
+          link: "/",
         },
         {
           name: "Team",
-          link: "/Team",
+          link: "/",
         },
       ],
     },
