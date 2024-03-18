@@ -4,7 +4,7 @@ const tiers = [
   {
     name: 'Basic Plan',
     id: 'tier-freelancer',
-    href: 'https://machador-fe.vercel.app/login',
+    href: 'https://machador-frontend.vercel.app/login',
     priceMonthly: '€8.99',
     description: 'The essentials to provide your best work for clients.',
     features: ['Customized chatbot for company onboarding system', 'Essential features and functionalities', 'Email support', 'Suitable for small businesses or startups with minimal onboarding needs or low hiring volumes','20k tokens per month'],
@@ -13,7 +13,7 @@ const tiers = [
   {
     name: 'Standard Plan',
     id: 'tier-startup',
-    href: 'https://machador-fe.vercel.app/login',
+    href: 'https://machador-frontend.vercel.app/login',
     priceMonthly: '€15.99',
     description: 'A plan that scales with your rapidly growing business.',
     features: [
@@ -28,7 +28,7 @@ const tiers = [
   {
     name: 'Premium Plan',
     id: 'tier-enterprise',
-    href: 'https://machador-fe.vercel.app/login',
+    href: 'https://machador-frontend.vercel.app/login',
     priceMonthly: '€29.99',
     description: 'Dedicated support and infrastructure for your company.',
     features: [

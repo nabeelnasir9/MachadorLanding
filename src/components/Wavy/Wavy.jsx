@@ -13,7 +13,7 @@ export function Wavy() {
       <p className="text-base md:text-lg mt-4 text-black font-normal inter-var text-center">
       A single copilot for Any Enterprise Workflow, No AI Expertise required!
       </p>
-      <Link href="https://machador-fe.vercel.app/login">
+      <Link href="https://machador-frontend.vercel.app/login">
       <button className="Hero-learn-more">
   <span className="Hero-circle" aria-hidden="true">
   <span className="Hero-icon"></span>
