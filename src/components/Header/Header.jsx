@@ -17,15 +17,15 @@ export default function Header() {
       subPages: [
         {
           name: "Customized Solutions",
-          link: "/",
+          link: "/Customized",
         },
         {
           name: "Data Privacy & Security",
-          link: "/",
+          link: "/Privacy",
         },
         {
           name: "Training & Support",
-          link: "/",
+          link: "/Support",
         },
         {
           name: "Success Stories",
@@ -33,7 +33,7 @@ export default function Header() {
         },
         {
           name: "Contact & Inquiry",
-          link: "/",
+          link: "/Contact",
         },
       ],
     },
@@ -48,7 +48,7 @@ export default function Header() {
         },
         {
           name: "Features",
-          link: "/",
+          link: "/Feature",
         },
       ],
     },
@@ -58,7 +58,7 @@ export default function Header() {
       subPages: [
         {
           name: "Affiliate Programme",
-          link: "/",
+          link: "/Affiliate",
         },
         {
           name: "Become a Partner",
@@ -81,7 +81,7 @@ export default function Header() {
         },
         {
           name: "Team",
-          link: "/",
+          link: "/Team",
         },
       ],
     },
@@ -238,7 +238,7 @@ export default function Header() {
       </Link>
        </div>
       </header>
-      
+     
     </div>
   );
 }

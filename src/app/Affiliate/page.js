@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import {GlobeDemo} from '@/components/Globe/Globe'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -232,7 +233,7 @@ export default function Example() {
         </dl>
       </div>
     </div>
-
+<GlobeDemo/>
     </div>
   )
 }
