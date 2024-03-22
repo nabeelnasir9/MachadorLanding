@@ -546,7 +546,6 @@ export default function Example() {
           </div>
         </div>
 
-<CTA/>
         {/* CTA Section */}
       </main>
     </div>
