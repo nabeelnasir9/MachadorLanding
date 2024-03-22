@@ -1,6 +1,6 @@
-"use client"
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+"use client";
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
 import {
   ArrowUturnLeftIcon,
   Bars3Icon,
@@ -16,112 +16,136 @@ import {
   TrashIcon,
   UsersIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+} from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
+import logoLaravel from "@/images/logos/laravel.svg";
+import logoMirage from "@/images/logos/mirage.svg";
+import logoStatamic from "@/images/logos/statamic.svg";
+import logoStaticKit from "@/images/logos/statickit.svg";
+import logoTransistor from "@/images/logos/transistor.svg";
+import logoTuple from "@/images/logos/tuple.svg";
 
 const solutions = [
   {
-    name: 'Inbox',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    name: "Inbox",
+    description:
+      "Get a better understanding of where your traffic is coming from.",
+    href: "#",
     icon: InboxIcon,
   },
   {
-    name: 'Messaging',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    name: "Messaging",
+    description: "Speak directly to your customers in a more meaningful way.",
+    href: "#",
     icon: ChatBubbleBottomCenterTextIcon,
   },
   {
-    name: 'Live Chat',
+    name: "Live Chat",
     description: "Your customers' data will be safe and secure.",
-    href: '#',
+    href: "#",
     icon: ChatBubbleLeftRightIcon,
   },
   {
-    name: 'Knowledge Base',
+    name: "Knowledge Base",
     description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    href: "#",
     icon: QuestionMarkCircleIcon,
   },
-]
+];
 const features = [
   {
-    name: 'Unlimited Inboxes',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: "AI Expertise",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
     icon: InboxIcon,
   },
   {
-    name: 'Manage Team Members',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: "Track Record of Success",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
     icon: UsersIcon,
   },
   {
-    name: 'Spam Report',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: "Complex Problem Solving",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
     icon: TrashIcon,
   },
   {
-    name: 'Compose in Markdown',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: "Case Studies and Success Stories",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
     icon: PencilSquareIcon,
   },
   {
-    name: 'Team Reporting',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: "Unparalleled Support",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
     icon: DocumentChartBarIcon,
   },
   {
-    name: 'Saved Replies',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: "Security and Compliance",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
     icon: ArrowUturnLeftIcon,
   },
-  {
-    name: 'Email Commenting',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ChatBubbleLeftEllipsisIcon,
-  },
-  {
-    name: 'Connect with Customers',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: HeartIcon,
-  },
-]
+];
 const metrics = [
-  { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
-  { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
-  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
-  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
-]
+  {
+    id: 1,
+    stat: "8K+",
+    emphasis: "Companies",
+    rest: "use laoreet amet lacus nibh integer quis.",
+  },
+  {
+    id: 2,
+    stat: "25K+",
+    emphasis: "Countries around the globe",
+    rest: "lacus nibh integer quis.",
+  },
+  {
+    id: 3,
+    stat: "98%",
+    emphasis: "Customer satisfaction",
+    rest: "laoreet amet lacus nibh integer quis.",
+  },
+  {
+    id: 4,
+    stat: "12M+",
+    emphasis: "Issues resolved",
+    rest: "lacus nibh integer quis.",
+  },
+];
 const footerNavigation = {
   solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: "Marketing", href: "#" },
+    { name: "Analytics", href: "#" },
+    { name: "Commerce", href: "#" },
+    { name: "Insights", href: "#" },
   ],
   support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+    { name: "Pricing", href: "#" },
+    { name: "Documentation", href: "#" },
+    { name: "Guides", href: "#" },
+    { name: "API Status", href: "#" },
   ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: "About", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Jobs", href: "#" },
+    { name: "Press", href: "#" },
+    { name: "Partners", href: "#" },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: "Claim", href: "#" },
+    { name: "Privacy", href: "#" },
+    { name: "Terms", href: "#" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -133,8 +157,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -146,8 +170,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'X',
-      href: '#',
+      name: "X",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
@@ -155,8 +179,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
+      name: "GitHub",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -168,8 +192,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Dribbble',
-      href: '#',
+      name: "Dribbble",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -181,15 +205,42 @@ const footerNavigation = {
       ),
     },
   ],
-}
+};
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
   return (
     <div className="bg-white mt-20">
+      <div className="pb-16 pt-20 text-center lg:pt-32">
+        <h1 className="mx-auto max-w-6xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+          Get Your{" "}
+          <span className="relative whitespace-nowrap text-black">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 418 42"
+              className="absolute left-0 top-2/3 h-[0.58em] w-full fill-[#189CCD]"
+              preserveAspectRatio="none"
+            >
+              <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z" />
+            </svg>
+            <span className="relative">Customized </span>
+          </span>{" "}
+          Solution for Enterprise & businesses.
+        </h1>
+        <p className="mx-auto mt-6 max-w-5xl text-lg tracking-tight text-slate-700">
+          At Machador, we understand that every organization has unique needs
+          and challenges. That's why we offer tailor-made solutions that adapt
+          seamlessly to your specific requirements, ensuring your business
+          thrives in an ever-evolving landscape. Our dedication to providing
+          personalized services is at the core of our mission, making us the
+          preferred partner for businesses seeking innovative, efficient, and
+          secure onboarding processes.
+        </p>
+      </div>
+
       <main>
         {/* Hero section */}
         <div className="relative">
@@ -207,11 +258,14 @@ export default function Example() {
               <div className="relative px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
                 <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                   <span className="block text-white">Take control of your</span>
-                  <span className="block text-indigo-200">customer support</span>
+                  <span className="block text-indigo-200">
+                    customer support
+                  </span>
                 </h1>
                 <p className="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua.
+                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
+                  occaecat fugiat aliqua.
                 </p>
                 <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                   <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
@@ -242,10 +296,18 @@ export default function Example() {
             </p>
             <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+                <img
+                  className="h-12"
+                  src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                  alt="Tuple"
+                />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+                <img
+                  className="h-12"
+                  src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+                  alt="Mirage"
+                />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                 <img
@@ -274,22 +336,32 @@ export default function Example() {
 
         {/* Alternating Feature Sections */}
         <div className="relative overflow-hidden pb-32 pt-16">
-          <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100" />
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
+          />
           <div className="relative">
             <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
               <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:px-0 lg:py-16">
                 <div>
                   <div>
                     <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
-                      <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                      <InboxIcon
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900">Stay on top of customer support</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                      Stay on top of customer support
+                    </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia
-                      porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-                      Lectus viverra dui tellus ornare pharetra.
+                      Semper curabitur ullamcorper posuere nunc sed. Ornare
+                      iaculis bibendum malesuada faucibus lacinia porttitor.
+                      Pulvinar laoreet sagittis viverra duis. In venenatis sem
+                      arcu pretium pharetra at. Lectus viverra dui tellus ornare
+                      pharetra.
                     </p>
                     <div className="mt-6">
                       <a
@@ -305,8 +377,9 @@ export default function Example() {
                   <blockquote>
                     <div>
                       <p className="text-base text-gray-500">
-                        &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean
-                        curabitur donec aliquet. Mi venenatis in euismod ut.&rdquo;
+                        &ldquo;Cras velit quis eros eget rhoncus lacus ultrices
+                        sed diam. Sit orci risus aenean curabitur donec aliquet.
+                        Mi venenatis in euismod ut.&rdquo;
                       </p>
                     </div>
                     <footer className="mt-3">
@@ -343,7 +416,10 @@ export default function Example() {
                 <div>
                   <div>
                     <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
-                      <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                      <SparklesIcon
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     </span>
                   </div>
                   <div className="mt-6">
@@ -351,9 +427,11 @@ export default function Example() {
                       Better understand your customers
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia
-                      porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-                      Lectus viverra dui tellus ornare pharetra.
+                      Semper curabitur ullamcorper posuere nunc sed. Ornare
+                      iaculis bibendum malesuada faucibus lacinia porttitor.
+                      Pulvinar laoreet sagittis viverra duis. In venenatis sem
+                      arcu pretium pharetra at. Lectus viverra dui tellus ornare
+                      pharetra.
                     </p>
                     <div className="mt-6">
                       <a
@@ -380,24 +458,34 @@ export default function Example() {
         </div>
 
         {/* Gradient Feature Section */}
-        <div className="bg-gradient-to-r from-purple-800 to-indigo-700">
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-900">
           <div className="mx-auto max-w-4xl px-6 py-16 sm:pb-24 sm:pt-20 lg:max-w-7xl lg:px-8 lg:pt-24">
-            <h2 className="text-3xl font-bold tracking-tight text-white">Inbox support built for efficiency</h2>
-            <p className="mt-4 max-w-3xl text-lg text-purple-200">
-              Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. Blandit
-              aliquam sit nisl euismod mattis in.
+            <h2 className="text-3xl font-bold tracking-tight text-white">
+              Inbox support built for efficiency
+            </h2>
+            <p className="mt-4 max-w-3xl text-lg text-white">
+              Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+              magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis
+              in.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
               {features.map((feature) => (
                 <div key={feature.name}>
                   <div>
                     <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white bg-opacity-10">
-                      <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                      <feature.icon
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h3 className="text-lg font-medium text-white">{feature.name}</h3>
-                    <p className="mt-2 text-base text-purple-200">{feature.description}</p>
+                    <h3 className="text-lg font-medium text-white">
+                      {feature.name}
+                    </h3>
+                    <p className="mt-2 text-base text-white">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -433,16 +521,23 @@ export default function Example() {
                 Get actionable data that will help grow your business
               </p>
               <p className="mt-5 text-lg text-gray-300">
-                Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
-                feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet
-                lacus nibh integer quis. Eu vulputate diam sit tellus quis at.
+                Rhoncus sagittis risus arcu erat lectus bibendum. Ut in
+                adipiscing quis in viverra tristique sem. Ornare feugiat viverra
+                eleifend fusce orci in quis amet. Sit in et vitae tortor, massa.
+                Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam
+                sit tellus quis at.
               </p>
               <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2">
                 {metrics.map((item) => (
                   <p key={item.id}>
-                    <span className="block text-2xl font-bold text-white">{item.stat}</span>
+                    <span className="block text-2xl font-bold text-white">
+                      {item.stat}
+                    </span>
                     <span className="mt-1 block text-base text-gray-300">
-                      <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
+                      <span className="font-medium text-white">
+                        {item.emphasis}
+                      </span>{" "}
+                      {item.rest}
                     </span>
                   </p>
                 ))}
@@ -451,9 +546,9 @@ export default function Example() {
           </div>
         </div>
 
+<CTA/>
         {/* CTA Section */}
-
       </main>
     </div>
-  )
+  );
 }

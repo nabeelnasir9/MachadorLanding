@@ -17,15 +17,15 @@ export default function Header() {
       subPages: [
         {
           name: "Customized Solutions",
-          link: "/Customized",
+          link: "/",
         },
         {
           name: "Data Privacy & Security",
-          link: "/Privacy",
+          link: "/",
         },
         {
           name: "Training & Support",
-          link: "/Support",
+          link: "/",
         },
         {
           name: "Success Stories",
@@ -48,7 +48,7 @@ export default function Header() {
         },
         {
           name: "Features",
-          link: "/Feature",
+          link: "/",
         },
       ],
     },
@@ -58,7 +58,7 @@ export default function Header() {
       subPages: [
         {
           name: "Affiliate Programme",
-          link: "/Affiliate",
+          link: "/",
         },
         {
           name: "Become a Partner",
