@@ -111,7 +111,7 @@ export default function Example() {
                 </div>
               </div>
               <img
-                src="ico2.png"
+                src="conf.png"
                 alt="Product screenshot"
                 className="w-[40rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem] md:-ml-4 lg:-ml-0"
                 width={632}
@@ -154,7 +154,7 @@ export default function Example() {
             </div>
             <div className="flex items-start justify-end lg:order-first">
               <img
-                src="/ico3.png"
+                src="/conf1.png"
                 alt="Product screenshot"
                 className="w-[40rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
                 width={1132}
@@ -191,7 +191,7 @@ export default function Example() {
                 </div>
               </div>
               <img
-                src="ico2.png"
+                src="serv.png"
                 alt="Product screenshot"
                 className="w-[40rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem] md:-ml-4 lg:-ml-0"
                 width={632}
