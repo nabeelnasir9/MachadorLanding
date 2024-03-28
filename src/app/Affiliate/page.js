@@ -1,157 +1,278 @@
 "use client"
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import {GlobeDemo} from '@/components/Globe/Globe'
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-
-const stats = [
-    { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-    { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-    { id: 3, name: 'New users annually', value: '46,000' },
+import {
+    BoltIcon,
+    ChatBubbleBottomCenterTextIcon,
+    EnvelopeIcon,
+    GlobeAltIcon,
+    ScaleIcon,
+  } from '@heroicons/react/24/outline'
+  import {GlobeDemo} from "@/components/Globe/Globe"
+  import CTA from "@/components/CTA/CTA"
+  
+  const transferFeatures = [
+    {
+      id: 1,
+      name: 'Earn Commission',
+      description:
+        'Generate revenue by referring new customers to Machador. Our competitive commission structure rewards you for every successful referral.        ',
+      icon: GlobeAltIcon,
+    },
+    {
+      id: 2,
+      name: 'Marketing Support',
+      description:
+        'Access a range of marketing materials and support to help you promote Machador effectively to your audience.        ',
+      icon: ScaleIcon,
+    },
+  ]
+  const communicationFeatures = [
+    {
+      id: 1,
+      name: 'Collaborate on Solutions:',
+      description:
+        'Work closely with us to develop bespoke AI solutions that complement your services and add value to your clients.        ',
+      icon: ChatBubbleBottomCenterTextIcon,
+    },
+    {
+      id: 2,
+      name: 'Grow Together',
+      description:
+        'Benefit from co-marketing opportunities, enhanced support, and shared expertise to expand your business and ours.        ',
+      icon: EnvelopeIcon,
+    },
   ]
 
-export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const transFeatures = [
+    {
+      id: 1,
+      name: 'Innovation',
+      description:
+        'Leverage our leading AI technology to offer cutting-edge solutions.',
+      icon: GlobeAltIcon,
+    },
+    {
+      id: 2,
+      name: 'Support',
+      description:
+        'We provide comprehensive training and support to ensure our partners are equipped for success. ',
+      icon: ScaleIcon,
+    },
+    {
+      id: 3,
+      name: 'Community',
+      description:
+        'Join a growing network of innovators and leaders in the AI space.',
+      icon: BoltIcon,
+    },
+  ]
+  
+  export default function Example() {
+    return (
+      <div className="overflow-hidden bg-gray-50 py-16 lg:py-24">
+        <div className="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
+  
+          <div className="pb-16 pt-20 text-center lg:pt-32">
+        <h1 className="mx-auto max-w-7xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+        Join Machador’s Affiliate 
+          <span className="relative whitespace-nowrap text-black">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 418 42"
+              className="absolute left-0 top-2/3 h-[0.58em] w-full fill-[#189CCD]"
+              preserveAspectRatio="none"
+            >
+              <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z" />
+            </svg>
+            <span className="relative"> Program </span>
+          </span>{" "}
+          and Partnership Network
+                  </h1>
+        <p className="mx-auto mt-6 max-w-5xl text-lg tracking-tight text-slate-700">
+        Machador invites you to join our Affiliate Program and Partnership Network, designed for businesses and individuals passionate about driving digital transformation and efficiency through advanced AI solutions.
 
-  return (
-    <div className="bg-white">
-      <main>
-        <div className="relative isolate">
+        </p>
+      </div>
+  <GlobeDemo/>
+          <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+            <div className="relative">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Affiliate Program</h3>
+  
+              <dl className="mt-10 space-y-10">
+                {transferFeatures.map((item) => (
+                  <div key={item.id} className="relative">
+                    <dt>
+                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500 text-white">
+                        <item.icon className="h-8 w-8" aria-hidden="true" />
+                      </div>
+                      <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
+                    </dt>
+                    <dd className="ml-16 mt-2 text-base text-gray-500">{item.description}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+  
+            <div className="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
+              <svg
+                className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+                width={784}
+                height={404}
+                fill="none"
+                viewBox="0 0 784 404"
+              >
+                <defs>
+                  <pattern
+                    id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                  </pattern>
+                </defs>
+                <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+              </svg>
+              <img
+                className="relative mx-auto"
+                width={490}
+                src="https://tailwindui.com/img/features/feature-example-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+  
           <svg
-            className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+            className="absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block"
+            width={404}
+            height={784}
+            fill="none"
+            viewBox="0 0 404 784"
             aria-hidden="true"
           >
             <defs>
               <pattern
-                id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
-                width={200}
-                height={200}
-                x="50%"
-                y={-1}
+                id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
+                x={0}
+                y={0}
+                width={20}
+                height={20}
                 patternUnits="userSpaceOnUse"
               >
-                <path d="M.5 200V.5H200" fill="none" />
+                <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-              <path
-                d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
-                strokeWidth={0}
-              />
-            </svg>
-            <rect width="100%" height="100%" strokeWidth={0} fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
+            <rect width={404} height={784} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
           </svg>
-          <div
-            className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
-            aria-hidden="true"
-          >
-            <div
-              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-              style={{
-                clipPath:
-                  'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
-              }}
-            />
-          </div>
-          <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-              <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people connect.
-                  </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
-                    labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
-                    mollit id pariatur in voluptate cillum.
-                  </p>
-                  <div className="mt-10 flex items-center gap-x-6">
-                    <a
-                      href="#"
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+  
+          <div className="relative mt-12 sm:mt-16 lg:mt-24">
+            <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
+              <div className="lg:col-start-2">
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Be a Partner</h3>
+                
+  
+                <dl className="mt-10 space-y-10">
+                  {communicationFeatures.map((item) => (
+                    <div key={item.id} className="relative">
+                      <dt>
+                        <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500 text-white">
+                          <item.icon className="h-8 w-8" aria-hidden="true" />
+                        </div>
+                        <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
+                      </dt>
+                      <dd className="ml-16 mt-2 text-base text-gray-500">{item.description}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+  
+              <div className="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
+                <svg
+                  className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+                  width={784}
+                  height={404}
+                  fill="none"
+                  viewBox="0 0 784 404"
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <pattern
+                      id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                      x={0}
+                      y={0}
+                      width={20}
+                      height={20}
+                      patternUnits="userSpaceOnUse"
                     >
-                      Get started
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                      Live demo <span aria-hidden="true">→</span>
-                    </a>
-                  </div>
-                </div>
-                <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                  <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-                    <div className="relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                        alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                  </div>
-                  <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                    <div className="relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                        alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                    <div className="relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-                        alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                  </div>
-                  <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                    <div className="relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                        alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                    <div className="relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                        alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                  </div>
-                </div>
+                      <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                    </pattern>
+                  </defs>
+                  <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+                </svg>
+                <img
+                  className="relative mx-auto"
+                  width={490}
+                  src="https://tailwindui.com/img/features/feature-example-2.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-        </div>
-      </main>
-         <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-          {stats.map((stat) => (
-            <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt className="text-base leading-7 text-gray-600">{stat.name}</dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                {stat.value}
-              </dd>
+          <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+            <div className="relative">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Why Partner with Machador?</h3>
+  
+              <dl className="mt-10 space-y-10">
+                {transFeatures.map((item) => (
+                  <div key={item.id} className="relative">
+                    <dt>
+                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500 text-white">
+                        <item.icon className="h-8 w-8" aria-hidden="true" />
+                      </div>
+                      <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
+                    </dt>
+                    <dd className="ml-16 mt-2 text-base text-gray-500">{item.description}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
-          ))}
-        </dl>
+  
+            <div className="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
+              <svg
+                className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+                width={784}
+                height={404}
+                fill="none"
+                viewBox="0 0 784 404"
+              >
+                <defs>
+                  <pattern
+                    id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                  </pattern>
+                </defs>
+                <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+              </svg>
+              <img
+                className="relative mx-auto"
+                width={490}
+                src="https://tailwindui.com/img/features/feature-example-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-10">
+        <CTA/>
+        </div>
       </div>
-    </div>
-<GlobeDemo/>
-    </div>
-  )
-}
+    )
+  }
+  

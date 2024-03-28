@@ -1,35 +1,32 @@
-"use client"
-import React, {useState} from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Image from "next/image";
-// import { useLocalization } from "../../context/LocalizationContext";
 import Link from "next/link";
 
 export default function Header() {
-  // const { handleOnChange} = useLocalization();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigations = [
-   
     {
       name: "Enterprise",
       link: "/",
       subPages: [
         {
           name: "Customized Solutions",
-          link: "/",
+          link: "/Customized",
         },
         {
           name: "Data Privacy & Security",
-          link: "/",
+          link: "/Privacy",
         },
         {
           name: "Training & Support",
-          link: "/",
+          link: "/Support",
         },
         {
           name: "Success Stories",
-          link: "/",
+          link: "/Sucess",
         },
         {
           name: "Contact & Inquiry",
@@ -37,7 +34,7 @@ export default function Header() {
         },
       ],
     },
-    
+
     {
       name: "How it Works",
       link: "/",
@@ -48,7 +45,7 @@ export default function Header() {
         },
         {
           name: "Features",
-          link: "/",
+          link: "/Feature",
         },
       ],
     },
@@ -58,30 +55,30 @@ export default function Header() {
       subPages: [
         {
           name: "Affiliate Programme",
-          link: "/",
+          link: "/Affiliate",
         },
         {
           name: "Become a Partner",
-          link: "/",
-        }
+          link: "/Partner",
+        },
       ],
     },
-    
+
     {
       name: "Company",
       link: "/",
       subPages: [
         {
           name: "History",
-          link: "/",
+          link: "/Company",
         },
         {
           name: "Mission",
-          link: "/",
+          link: "/Company#mission",
         },
         {
           name: "Team",
-          link: "/Team",
+          link: "/Company#team",
         },
       ],
     },
@@ -89,9 +86,7 @@ export default function Header() {
       name: "Pricing",
       link: "/Pricing",
     },
-  
   ];
-  
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -120,7 +115,7 @@ export default function Header() {
           />
         </Link>
         <div className={styles.hamburger}>
-          <input type="checkbox" checked={menuOpen} onChange={toggleMenu}/>
+          <input type="checkbox" checked={menuOpen} onChange={toggleMenu} />
           <span className={styles.hamburgerItem1}></span>
           <span className={styles.hamburgerItem2}></span>
           <span className={styles.hamburgerItem3}></span>
@@ -156,12 +151,14 @@ export default function Header() {
                         </svg>
                       </span>
                     )}
- 
+
                     {item?.subPages && (
                       <ul className={styles.mobileSubNav}>
                         {item?.subPages.map((subItem, subIndex) => (
                           <li key={subIndex}>
-                            <Link href={subItem?.link} onClick={closeMenu}>{subItem?.name}</Link>
+                            <Link href={subItem?.link} onClick={closeMenu}>
+                              {subItem?.name}
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -171,20 +168,20 @@ export default function Header() {
               </ul>
             </div>
             <div className={styles.mobileLang}>
-             <Link href="/Contact">
-            <button
-        type="button"
-        className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-      >
-        Get In Touch
-      </button>
-      </Link>
-      <button
-        type="button"
-        className="rounded-full bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-gray-50 hover:text-black"
-      >
-        Login
-      </button>
+              <Link href="/Contact">
+                <button
+                  type="button"
+                  className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                >
+                  Get In Touch
+                </button>
+              </Link>
+              <button
+                type="button"
+                className="rounded-full bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-gray-50 hover:text-black"
+              >
+                Login
+              </button>
             </div>
           </div>
         </div>
@@ -220,25 +217,24 @@ export default function Header() {
           ))}
         </ul>
         <div className={styles.phoneContainer}>
-        <Link href="/Contact">
-        <button
-        type="button"
-        className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-cyan-500 shadow-sm ring-1 ring-inset ring-cyan-500 hover:bg-gray-50"
-      >
-        Get In Touch
-      </button>
-      </Link>
-      <Link href="https://machador-frontend.vercel.app/login">
-      <button
-        type="button"
-        className="rounded-full bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-white hover:text-white"
-      >
-        Login
-      </button>
-      </Link>
-       </div>
+          <Link href="/Contact">
+            <button
+              type="button"
+              className="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-cyan-500 shadow-sm ring-1 ring-inset ring-cyan-500 hover:bg-gray-50"
+            >
+              Get In Touch
+            </button>
+          </Link>
+          <Link href="https://machador-frontend.vercel.app/login">
+            <button
+              type="button"
+              className="rounded-full bg-gradient-to-r from-[rgba(16,163,209,1)] to-[rgba(0,213,187,1)] px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset  hover:bg-white hover:text-white"
+            >
+              Login
+            </button>
+          </Link>
+        </div>
       </header>
-     
     </div>
   );
 }

@@ -35,7 +35,6 @@ import Trusties from "@/components/Trustes/Trusties";
 import Ourteams from "@/components/OurTeam/OurTeam";
 import ThreeD from "@/components/3dcard/3dcard";
 
-
 export default function Page() {
   const [loading, setLoading] = useState(true);
 
@@ -46,13 +45,12 @@ export default function Page() {
 
   return (
     <React.Fragment>
-     
       <>
         <Wavy />
         {/* <div className="w-screen h-[100vh] overflow-hidden">
             <Scene />
           </div> */}
-        <Trusties/>
+        <Trusties />
         <HomeIcons />
         <Dashboard />
         <Render />
@@ -73,12 +71,10 @@ export default function Page() {
         {/* <Ourteams/> */}
         <Pricing />
         <Testimonial />
-        <CTA/>
-
+        <CTA />
 
         {/* <BackgroundBeamsDemo /> */}
         <FAQ />
-
       </>
     </React.Fragment>
   );
