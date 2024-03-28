@@ -137,7 +137,7 @@ import {
               <img
                 className="relative mx-auto"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-1.png"
+                src="/inter.png"
                 alt=""
               />
             </div>
@@ -213,7 +213,7 @@ import {
                 <img
                   className="relative mx-auto"
                   width={490}
-                  src="https://tailwindui.com/img/features/feature-example-2.png"
+                  src="/conn.png"
                   alt=""
                 />
               </div>
@@ -263,7 +263,7 @@ import {
               <img
                 className="relative mx-auto"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-1.png"
+                src="/partn.png"
                 alt=""
               />
             </div>
